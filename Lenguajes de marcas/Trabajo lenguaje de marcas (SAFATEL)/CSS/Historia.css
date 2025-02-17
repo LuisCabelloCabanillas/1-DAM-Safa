@@ -1,0 +1,126 @@
+.header {
+    background-color: #e8f5e9;
+    padding: 2rem 0;
+}
+
+h2{
+    font-size: 1.8rem;
+}
+
+.logo {
+    background-color: #4a7c59;
+    border-radius: 9999px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo svg {
+    width: 3rem;
+    height: 3rem;
+    color: white;
+}
+
+.brand-name {
+    font-size: 2.25rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.slogan-box {
+    background-color: #90cc90;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.slogan-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.slogan-image {
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.rounded-circle{
+    border-radius: 50%;
+    width: 15rem;
+}
+
+.rounded-circle a{
+    border-radius: 50%;
+    width: 15rem;
+}
+
+.logo {
+    width: 32px;
+    height: 32px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.content-container {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 900px;
+}
+.text-box {
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    background-color: #e9ecef;
+    padding: 1rem 0;
+    font-size: 0.875rem;
+}
+
+
+.footer p {
+    margin-bottom: 0.25rem;
+}
+
+.social-title {
+    font-weight: 500;
+}
+
+.contact-info, .social-info {
+    padding: 0 1rem;
+}
+
+.container {
+    max-width: 800px !important;
+}
+.rounded-4 {
+    border-radius: 15px !important;
+}
+
+.container {
+    max-width: 800px !important;
+  }
+  
+.rounded-4 {
+    border-radius: 15px !important;
+  }
+  
+.row.g-4.mt-2{
+    display: flex;
+    justify-content:space-between;
+}
+
+.col-md-4{
+    width: 50%;
+}

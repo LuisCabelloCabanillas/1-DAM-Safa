@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="DETALLES_PEDIDO" directorySegmentName="seg_0" id="21C4C94C-C30B-9DF3-EF3F-7131727223A6">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:15:39 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<schemaObject>F6E883D4-9189-FC8E-18A7-398D4E8651BB</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>D237CD91-FFB7-B801-5B81-9A09609EDD65</segment>
+<tableSpace>DCA1365C-4F22-C2DC-5CCD-2961952EF3F3</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID_PEDIDO" id="012483B8-2F5B-672F-B325-C0A4A5048B6F">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:15:39 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID" id="0DCF51F6-6672-D031-1A1A-A801F22EB162">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:15:39 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_PRODUCTO" id="1B18ECD0-FFC1-5CD9-2EBE-DB2BFFB7811B">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:15:39 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CANTIDAD" id="B62A2BAB-3AC6-65C1-BCDD-3439C1683E8D">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:15:39 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SYS_C007322" id="141CF50A-04BF-754C-07E9-5DB955A78837">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:15:40 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SYS_C007321" id="50F357F1-ECE6-4B2F-D2FD-42BBFA307C49">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:15:40 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="DETALLES_PEDIDO_PK" id="324E10B5-5F28-34A0-F259-F72DE19CB63A">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:15:40 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<schemaObject>F6E883D4-9189-FC8E-18A7-398D4E8651BB</schemaObject>
+<segment>315BC778-3982-299C-FA74-3C8E0343A6C8</segment>
+<tableSpace>DCA1365C-4F22-C2DC-5CCD-2961952EF3F3</tableSpace>
+<indexSegment>315BC778-3982-299C-FA74-3C8E0343A6C8</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

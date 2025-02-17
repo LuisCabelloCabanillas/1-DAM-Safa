@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<UserOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" name="C##EMPRESA" directorySegmentName="seg_0" id="C543FF29-C193-944E-FE12-4DCCE9373925">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjName>C##EMPRESA</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:48:50 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<schemaObject>6D8D41AA-801A-A77D-FB52-3D296986A640</schemaObject>
+</UserOraclev10g>

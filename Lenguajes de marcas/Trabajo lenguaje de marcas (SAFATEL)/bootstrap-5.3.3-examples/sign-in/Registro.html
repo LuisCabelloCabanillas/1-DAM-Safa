@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafaTel - Acceso</title>
+    <link rel="stylesheet" href="../sign-in/registro.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Background Image Overlay -->
+        <div class="background-overlay"></div>
+
+        <!-- Home Icon -->
+        <div class="home-icon">
+            <i data-lucide="home"></i>
+        </div>
+
+        <!-- Login Container -->
+        <div class="login-container">
+            <div class="header">
+                <h1>SafaTel</h1>
+                <h2>Acceso</h2>
+            </div>
+
+            <form class="login-form">
+                <div class="form-group">
+                    <label for="email">Email / Nombre de Usuario</label>
+                    <input 
+                        type="text" 
+                        id="email" 
+                        placeholder="Email o Nombre de Usuario"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Contraseña</label>
+                    <input 
+                        type="password" 
+                        id="password" 
+                        placeholder="Contraseña"
+                    >
+                </div>
+
+                <div class="recaptcha">
+                    <input type="checkbox" id="robot">
+                    <label for="robot">No soy un robot</label>
+                    <img 
+                        src="https://www.google.com/recaptcha/about/images/reCAPTCHA-logo@2x.png"
+                        alt="reCAPTCHA"
+                    >
+                </div>
+
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>

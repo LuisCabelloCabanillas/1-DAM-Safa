@@ -1,0 +1,55 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="CLIENTES" directorySegmentName="seg_0" id="8492CB48-62A3-4C01-C01E-3D6CEBD83163">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:15:39 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<schemaObject>F6E883D4-9189-FC8E-18A7-398D4E8651BB</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>D237CD91-FFB7-B801-5B81-9A09609EDD65</segment>
+<tableSpace>DCA1365C-4F22-C2DC-5CCD-2961952EF3F3</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="NOMBRE" id="1132863D-8757-5FD9-12DF-C9D350737404">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:15:39 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DIRECCIÓN" id="6701E8D1-D239-54BE-CB01-3784B7C55FD5">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:15:39 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TELÉFONO" id="A5055402-B50D-B2A1-01C3-273B2ADB99D7">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:15:39 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CP" id="B1FC5E57-6ECD-2E8D-BBB4-6575BB7C9E37">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:15:39 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID" id="E0029313-78F6-EC2A-E631-F28D843A2961">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:15:39 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="CLIENTES_PK" id="F6E041E3-9A70-6834-CC17-0249089F000E">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:15:40 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<schemaObject>F6E883D4-9189-FC8E-18A7-398D4E8651BB</schemaObject>
+<segment>315BC778-3982-299C-FA74-3C8E0343A6C8</segment>
+<tableSpace>DCA1365C-4F22-C2DC-5CCD-2961952EF3F3</tableSpace>
+<indexSegment>315BC778-3982-299C-FA74-3C8E0343A6C8</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

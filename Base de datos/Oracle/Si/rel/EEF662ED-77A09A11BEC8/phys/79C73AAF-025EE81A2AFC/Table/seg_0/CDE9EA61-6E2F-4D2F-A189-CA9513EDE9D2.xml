@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="EMPLEADOS" directorySegmentName="seg_0" id="CDE9EA61-6E2F-4D2F-A189-CA9513EDE9D2">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-05 11:09:21 UTC</createdTime>
+<ownerDesignName>Si</ownerDesignName>
+<schemaObject>327A8D6F-E072-94BA-C62F-ED4C98436123</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>131AF17C-A034-9455-2717-C1627ED10669</segment>
+<tableSpace>32FCDC70-D62A-FB34-AC60-651821C8F484</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="FECNA" id="0978FF6E-C3EF-071A-6CD9-296C49DDE410">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-05 11:09:22 UTC</createdTime>
+<ownerDesignName>Si</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EXTEL" id="1DE8459B-B8D2-A07C-2E3C-1E9D12E61B19">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-05 11:09:22 UTC</createdTime>
+<ownerDesignName>Si</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NOMEM" id="38912FF2-C4D2-4A2E-D927-E1B77F92CE11">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-05 11:09:22 UTC</createdTime>
+<ownerDesignName>Si</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NUMEM" id="5AD30B94-5F8A-FEFA-C6DF-F087A9B0179E">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-05 11:09:22 UTC</createdTime>
+<ownerDesignName>Si</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COMIS" id="688717F5-E95A-B82F-604E-A588D36B5582">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-05 11:09:22 UTC</createdTime>
+<ownerDesignName>Si</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NUMHI" id="6BB2C54E-0B59-C68D-C55A-0DDACCC45EA6">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-05 11:09:22 UTC</createdTime>
+<ownerDesignName>Si</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NUMDE" id="7FFFF0C6-71CB-49FF-8375-CACC67BA32C1">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-05 11:09:22 UTC</createdTime>
+<ownerDesignName>Si</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FECIN" id="E7AF83F1-4D98-07BB-6B7C-99947992C474">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-05 11:09:22 UTC</createdTime>
+<ownerDesignName>Si</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SALAR" id="FE75932B-503D-CFD1-9A0D-7304ADB33FBB">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-05 11:09:22 UTC</createdTime>
+<ownerDesignName>Si</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_EMPLEADOS" id="72E13793-60A5-DAF7-120E-625E0D8C16CB">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-05 11:09:22 UTC</createdTime>
+<ownerDesignName>Si</ownerDesignName>
+<schemaObject>327A8D6F-E072-94BA-C62F-ED4C98436123</schemaObject>
+<segment>3A141F62-E536-74DF-57A7-BEA5A3041317</segment>
+<tableSpace>32FCDC70-D62A-FB34-AC60-651821C8F484</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK1_EMPLEADOS" id="786733C9-FB71-4FC7-F2EB-CD47CE54CE13">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-05 11:09:22 UTC</createdTime>
+<ownerDesignName>Si</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_EMPLEADOS" id="1BC4DD89-8529-213F-FCB9-9CB292537129">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-05 11:09:22 UTC</createdTime>
+<ownerDesignName>Si</ownerDesignName>
+<segment>3A141F62-E536-74DF-57A7-BEA5A3041317</segment>
+<tableSpace>32FCDC70-D62A-FB34-AC60-651821C8F484</tableSpace>
+<existingIndex>72E13793-60A5-DAF7-120E-625E0D8C16CB</existingIndex>
+<indexSegment>3A141F62-E536-74DF-57A7-BEA5A3041317</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="33918AEF-2A57-BC60-7C5F-E8AE785AAF95" schemaObject="F6E883D4-9189-FC8E-18A7-398D4E8651BB" name="PRODUCTOS">
+<sourceConnName>HELADERIA</sourceConnName>
+<sourceObjSchema>C##HELADERIA</sourceObjSchema>
+<sourceObjName>PRODUCTOS</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:15:39 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="949C0788-3DAC-3D55-9B97-265F9DF9AC59">
+<sourceConnName>HELADERIA</sourceConnName>
+<sourceObjSchema>PRODUCTOS</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:15:39 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE" id="91A4FC6E-3869-7F45-AF7C-2C8446F6BC8C">
+<sourceConnName>HELADERIA</sourceConnName>
+<sourceObjSchema>PRODUCTOS</sourceObjSchema>
+<sourceObjName>NOMBRE</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:15:39 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>75 BYTE</dataTypeSize>
+<ownDataTypeParameters>75 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCIÓN" id="8CC014D3-3F83-3581-A2B6-75F11F1772AE">
+<sourceConnName>HELADERIA</sourceConnName>
+<sourceObjSchema>PRODUCTOS</sourceObjSchema>
+<sourceObjName>DESCRIPCIÓN</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:15:39 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRECIO" id="0B0AFD85-27C8-7166-A5FE-C5ADABD7BFA8">
+<sourceConnName>HELADERIA</sourceConnName>
+<sourceObjSchema>PRODUCTOS</sourceObjSchema>
+<sourceObjName>PRECIO</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:15:39 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="504F3CAE-467D-9B32-ADFD-CAC6888DD8C5" schemaObject="F6E883D4-9189-FC8E-18A7-398D4E8651BB" name="PRODUCTOS_PK">
+<sourceConnName>HELADERIA</sourceConnName>
+<sourceObjSchema>C##HELADERIA</sourceObjSchema>
+<sourceObjName>SYS_C007312</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:15:40 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="949C0788-3DAC-3D55-9B97-265F9DF9AC59"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

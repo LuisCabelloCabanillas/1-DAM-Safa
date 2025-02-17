@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="CENTROS" directorySegmentName="seg_0" id="F07A3B09-E3DB-EC7B-60DD-EE4E8B263A80">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:48:59 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<schemaObject>6D8D41AA-801A-A77D-FB52-3D296986A640</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>D237CD91-FFB7-B801-5B81-9A09609EDD65</segment>
+<tableSpace>DCA1365C-4F22-C2DC-5CCD-2961952EF3F3</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="NOMCE" id="2FB5D1C6-BBC1-8A77-9C34-61645794790F">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:48:59 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NUMCE" id="47333884-8B2E-8A83-C01F-24C53DF13D5F">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:48:59 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DIRCE" id="61D4F500-A0F3-07C0-D8F7-5393B353E319">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:48:59 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_CENTROS" id="AEAE64A0-496C-BB98-6E8F-2F24AC433972">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:48:59 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<schemaObject>6D8D41AA-801A-A77D-FB52-3D296986A640</schemaObject>
+<segment>315BC778-3982-299C-FA74-3C8E0343A6C8</segment>
+<tableSpace>DCA1365C-4F22-C2DC-5CCD-2961952EF3F3</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_CENTROS" id="A25B2DF7-2EAD-374E-E3A9-6E94E1FA311C">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:48:59 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<segment>315BC778-3982-299C-FA74-3C8E0343A6C8</segment>
+<tableSpace>DCA1365C-4F22-C2DC-5CCD-2961952EF3F3</tableSpace>
+<existingIndex>AEAE64A0-496C-BB98-6E8F-2F24AC433972</existingIndex>
+<indexSegment>315BC778-3982-299C-FA74-3C8E0343A6C8</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="CENTROS_NOMCE_UN" id="49B0A511-0CC1-F7B0-3C53-587CBE76858C">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:48:59 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<schemaObject>6D8D41AA-801A-A77D-FB52-3D296986A640</schemaObject>
+<segment>315BC778-3982-299C-FA74-3C8E0343A6C8</segment>
+<tableSpace>DCA1365C-4F22-C2DC-5CCD-2961952EF3F3</tableSpace>
+<indexSegment>315BC778-3982-299C-FA74-3C8E0343A6C8</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev12c>

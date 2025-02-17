@@ -1,0 +1,208 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="224C56C3-AAFD-CA99-5D07-6A65E77F81B3" schemaObject="6D8D41AA-801A-A77D-FB52-3D296986A640" name="EMPLEADOS">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjSchema>C##EMPRESA</sourceObjSchema>
+<sourceObjName>EMPLEADOS</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:48:59 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<importedID>49F2226D-F3F5-25AB-844A-2BF8E5940188</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NUMEM" id="E5B24E95-90C6-FF74-16AA-7EFFFC5D8B21">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjSchema>EMPLEADOS</sourceObjSchema>
+<sourceObjName>NUMEM</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:48:59 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<importedID>55F0D28A-1060-CCF7-4CA1-C98CACE1E871</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EXTEL" id="3738E36D-243A-3E1D-DE9E-3A5DCC01E798">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjSchema>EMPLEADOS</sourceObjSchema>
+<sourceObjName>EXTEL</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:48:59 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<importedID>C879A163-54CF-7D4A-F644-C6E1E6C2A98E</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECNA" id="EA418ECF-EE4D-0AB7-C0CF-C7C24C30F148">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjSchema>EMPLEADOS</sourceObjSchema>
+<sourceObjName>FECNA</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:48:59 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<importedID>DA319878-809C-31A7-2449-83C427B90B18</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECIN" id="D07D110E-A75E-92B1-B8CC-479E5AF562D1">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjSchema>EMPLEADOS</sourceObjSchema>
+<sourceObjName>FECIN</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:48:59 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<importedID>CA5E0817-EE46-F2C0-41F4-F873BC867574</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SALAR" id="7F1AAD6A-2B8F-8464-6C3E-281831A7F235">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjSchema>EMPLEADOS</sourceObjSchema>
+<sourceObjName>SALAR</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:48:59 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<importedID>A4C900D4-FF3E-FB3C-A66C-485C31E771FE</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COMIS" id="427F6FEF-9DCF-2E62-46F0-8D1964D66959">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjSchema>EMPLEADOS</sourceObjSchema>
+<sourceObjName>COMIS</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:48:59 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<importedID>562AEEA5-DE29-5723-FE5A-FEB32195D4AF</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUMHI" id="2028E981-18D6-2536-3AFC-4B4D8BEA76BF">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjSchema>EMPLEADOS</sourceObjSchema>
+<sourceObjName>NUMHI</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:48:59 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<importedID>75EE3E89-6660-19D1-46D7-026A83EAD2DF</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,1,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMEM" id="A394902D-DCB1-C1DF-B0FD-539442826367">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjSchema>EMPLEADOS</sourceObjSchema>
+<sourceObjName>NOMEM</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:48:59 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<importedID>3F6A0BB5-D71B-E7E5-5206-E353778F70FF</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUMDE" id="8CC40807-1123-CAA7-0C73-668A49A83B04">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjSchema>EMPLEADOS</sourceObjSchema>
+<sourceObjName>NUMDE</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:48:59 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<importedID>407A1BE5-E318-6895-5A70-CE65CC4FF3B3</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FEF89C95-8938-AC39-F382-D3A27C1B15AA" referredColumn="AA1C7947-5014-4461-4788-951116D0D2DE"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9165B712-C543-F339-79B2-C2ECE2A8E096" name="PK_EMPLEADOS">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjSchema>C##EMPRESA</sourceObjSchema>
+<sourceObjName>PK_EMPLEADOS</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:48:59 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<importedID>BEDFB1D0-F45B-0C6A-AFA4-1ED0C2B99BF1</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E5B24E95-90C6-FF74-16AA-7EFFFC5D8B21"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C2AB89E1-EF3E-69CE-D5F8-C1C122658A9B" schemaObject="6D8D41AA-801A-A77D-FB52-3D296986A640" name="PK_EMPLEADOS">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjSchema>C##EMPRESA</sourceObjSchema>
+<sourceObjName>PK_EMPLEADOS</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:48:59 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<importedID>C4DF0E91-DB2C-0835-0CFF-04A3A76C823F</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E5B24E95-90C6-FF74-16AA-7EFFFC5D8B21"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="02B98E01-8591-F5E8-B092-333CB7040127" name="FK1_EMPLEADOS">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:48:59 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8CC40807-1123-CAA7-0C73-668A49A83B04"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

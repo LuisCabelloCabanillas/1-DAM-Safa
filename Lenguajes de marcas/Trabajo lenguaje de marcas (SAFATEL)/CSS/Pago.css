@@ -1,0 +1,80 @@
+body {
+    min-height: 100vh;
+    background: url(../IMAGENES/LogoSafaTel.jpg) no-repeat center center/cover;
+    position: relative;
+    padding-bottom: 120px;
+}
+
+.home-icon {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    color: #495057;
+}
+
+.rounded-circle {
+    border-radius: 50%;
+    width: 7rem;
+}
+
+.rounded-circle a{
+    border-radius: 50%;
+    width: 15rem;
+}
+.card {
+    max-width: 500px;
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #212529;
+}
+
+.form-label {
+    font-size: 0.875rem;
+    color: #495057;
+    font-weight: 500;
+}
+
+.form-control {
+    padding: 0.625rem 0.75rem;
+    border-color: #dee2e6;
+}
+
+.form-control:focus {
+    border-color: #ffc107;
+    box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.25);
+}
+
+.btn-dark {
+    padding: 0.625rem 1rem;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.btn-dark:hover {
+    background-color: #343a40;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #e9ecef;
+    padding: 1rem 0;
+    font-size: 0.875rem;
+}
+
+.footer p {
+    margin-bottom: 0.25rem;
+}
+
+.social-title {
+    font-weight: 500;
+}
+
+.contact-info, .social-info {
+    padding: 0 1rem;
+}

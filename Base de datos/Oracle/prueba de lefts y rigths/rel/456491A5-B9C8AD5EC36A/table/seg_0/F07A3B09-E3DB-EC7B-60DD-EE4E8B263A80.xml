@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F07A3B09-E3DB-EC7B-60DD-EE4E8B263A80" schemaObject="6D8D41AA-801A-A77D-FB52-3D296986A640" name="CENTROS">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjSchema>C##EMPRESA</sourceObjSchema>
+<sourceObjName>CENTROS</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:48:59 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<importedID>64CC7142-2CDB-207D-5C3A-B34E822A843B</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NUMCE" id="47333884-8B2E-8A83-C01F-24C53DF13D5F">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjSchema>CENTROS</sourceObjSchema>
+<sourceObjName>NUMCE</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:48:59 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<importedID>8FF12E7D-F631-B9C0-BEE3-DA0D64C35994</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,4,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMCE" id="2FB5D1C6-BBC1-8A77-9C34-61645794790F">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjSchema>CENTROS</sourceObjSchema>
+<sourceObjName>NOMCE</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:48:59 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<importedID>B388E354-B590-B82D-142E-1D50B9E391C5</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25 BYTE</dataTypeSize>
+<ownDataTypeParameters>25 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DIRCE" id="61D4F500-A0F3-07C0-D8F7-5393B353E319">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjSchema>CENTROS</sourceObjSchema>
+<sourceObjName>DIRCE</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:48:59 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<importedID>332EE08F-2575-CEC4-9931-4B1676ACA802</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25 BYTE</dataTypeSize>
+<ownDataTypeParameters>25 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A25B2DF7-2EAD-374E-E3A9-6E94E1FA311C" name="PK_CENTROS">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjSchema>C##EMPRESA</sourceObjSchema>
+<sourceObjName>PK_CENTROS</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:48:59 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<importedID>BE03CF83-D35A-D70E-9F80-97CDF66BA2F4</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="47333884-8B2E-8A83-C01F-24C53DF13D5F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="49B0A511-0CC1-F7B0-3C53-587CBE76858C" schemaObject="6D8D41AA-801A-A77D-FB52-3D296986A640" name="CENTROS_NOMCE_UN">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjSchema>C##EMPRESA</sourceObjSchema>
+<sourceObjName>SYS_C007302</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:48:59 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<importedID>ACD54B52-CAC6-3917-3D7F-3DE5DD79C2AE</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2FB5D1C6-BBC1-8A77-9C34-61645794790F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AEAE64A0-496C-BB98-6E8F-2F24AC433972" schemaObject="6D8D41AA-801A-A77D-FB52-3D296986A640" name="PK_CENTROS">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjSchema>C##EMPRESA</sourceObjSchema>
+<sourceObjName>PK_CENTROS</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:48:59 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<importedID>601423C4-F452-5EC6-EDFA-85E1F55EF560</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="47333884-8B2E-8A83-C01F-24C53DF13D5F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

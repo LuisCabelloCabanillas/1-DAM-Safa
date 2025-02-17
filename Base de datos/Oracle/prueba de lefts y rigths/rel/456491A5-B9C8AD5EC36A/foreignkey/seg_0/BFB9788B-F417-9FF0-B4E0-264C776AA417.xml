@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="BFB9788B-F417-9FF0-B4E0-264C776AA417" containerWithKeyObject="21C4C94C-C30B-9DF3-EF3F-7131727223A6" localFKIndex="141CF50A-04BF-754C-07E9-5DB955A78837" name="SYS_C007322">
+<sourceConnName>HELADERIA</sourceConnName>
+<sourceObjSchema>C##HELADERIA</sourceObjSchema>
+<sourceObjName>SYS_C007322</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:15:40 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<referredTableLongName>C##HELADERIA.PRODUCTOS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>33918AEF-2A57-BC60-7C5F-E8AE785AAF95</referredTableID>
+<keyObject>504F3CAE-467D-9B32-ADFD-CAC6888DD8C5</keyObject>
+<referredKeyID>504F3CAE-467D-9B32-ADFD-CAC6888DD8C5</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

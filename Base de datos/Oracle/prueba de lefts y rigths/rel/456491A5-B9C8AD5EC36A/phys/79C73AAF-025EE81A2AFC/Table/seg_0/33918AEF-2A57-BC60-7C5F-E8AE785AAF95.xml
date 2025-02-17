@@ -1,0 +1,50 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="PRODUCTOS" directorySegmentName="seg_0" id="33918AEF-2A57-BC60-7C5F-E8AE785AAF95">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:15:39 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<schemaObject>F6E883D4-9189-FC8E-18A7-398D4E8651BB</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>D237CD91-FFB7-B801-5B81-9A09609EDD65</segment>
+<tableSpace>DCA1365C-4F22-C2DC-5CCD-2961952EF3F3</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="PRECIO" id="0B0AFD85-27C8-7166-A5FE-C5ADABD7BFA8">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:15:39 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DESCRIPCIÓN" id="8CC014D3-3F83-3581-A2B6-75F11F1772AE">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:15:39 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NOMBRE" id="91A4FC6E-3869-7F45-AF7C-2C8446F6BC8C">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:15:39 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID" id="949C0788-3DAC-3D55-9B97-265F9DF9AC59">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:15:39 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PRODUCTOS_PK" id="504F3CAE-467D-9B32-ADFD-CAC6888DD8C5">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:15:40 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<schemaObject>F6E883D4-9189-FC8E-18A7-398D4E8651BB</schemaObject>
+<segment>315BC778-3982-299C-FA74-3C8E0343A6C8</segment>
+<tableSpace>DCA1365C-4F22-C2DC-5CCD-2961952EF3F3</tableSpace>
+<indexSegment>315BC778-3982-299C-FA74-3C8E0343A6C8</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

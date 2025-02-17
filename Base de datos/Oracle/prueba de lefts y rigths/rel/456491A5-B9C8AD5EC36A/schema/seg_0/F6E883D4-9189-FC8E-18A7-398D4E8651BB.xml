@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SchemaObject class="oracle.dbtools.crest.model.design.relational.SchemaObject" name="C##HELADERIA" directorySegmentName="seg_0" id="F6E883D4-9189-FC8E-18A7-398D4E8651BB">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:15:39 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<importedID>CC00F0FD-60BB-2AF0-D901-393CBA309F2E</importedID>
+</SchemaObject>

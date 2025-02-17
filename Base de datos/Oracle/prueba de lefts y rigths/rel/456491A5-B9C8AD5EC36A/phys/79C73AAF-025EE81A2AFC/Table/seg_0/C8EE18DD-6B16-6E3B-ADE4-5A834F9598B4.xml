@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="DEPARTAMENTOS" directorySegmentName="seg_0" id="C8EE18DD-6B16-6E3B-ADE4-5A834F9598B4">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:48:59 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<schemaObject>6D8D41AA-801A-A77D-FB52-3D296986A640</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>D237CD91-FFB7-B801-5B81-9A09609EDD65</segment>
+<tableSpace>DCA1365C-4F22-C2DC-5CCD-2961952EF3F3</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="TIDIR" id="02943F2C-1F74-D8E9-99FE-ECE0B1272C3B">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:48:59 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PRESU" id="044652B2-8CE0-AF9C-A2FD-691ED5478E64">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:48:59 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DEPDE" id="695DF6BF-49D3-9473-8B82-066C6A12173D">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:48:59 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NUMDE" id="AA1C7947-5014-4461-4788-951116D0D2DE">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:48:59 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DIREC" id="D8650243-2370-45C5-84D3-DBD157C05A74">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:48:59 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NUMCE" id="DDEC9334-F35C-E21B-F8A0-B289F51DD3CD">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:48:59 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NOMDE" id="E56DE5EC-B8D6-10ED-8771-FFFC9404AB44">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:48:59 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_DEPARTAMENTOS" id="06066FC3-937E-2998-F168-FE8ED8B80F1C">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:48:59 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<schemaObject>6D8D41AA-801A-A77D-FB52-3D296986A640</schemaObject>
+<segment>315BC778-3982-299C-FA74-3C8E0343A6C8</segment>
+<tableSpace>DCA1365C-4F22-C2DC-5CCD-2961952EF3F3</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK2_DEPARTAMENTOS" id="11A9CA23-248D-91D6-0CB3-46FD227E6E76">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:48:59 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK1_DEPARTAMENTOS" id="AD88BE35-5C63-3BDF-7BE8-8E970E40BF23">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:48:59 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_DEPARTAMENTOS" id="38E95029-EED7-683B-C6EC-F9CC8819A869">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:48:59 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<segment>315BC778-3982-299C-FA74-3C8E0343A6C8</segment>
+<tableSpace>DCA1365C-4F22-C2DC-5CCD-2961952EF3F3</tableSpace>
+<existingIndex>06066FC3-937E-2998-F168-FE8ED8B80F1C</existingIndex>
+<indexSegment>315BC778-3982-299C-FA74-3C8E0343A6C8</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

@@ -1,0 +1,143 @@
+.header {
+    background-color: #e8f5e9;
+    padding: 2rem 0;
+}
+
+h2{
+    font-size: 1.8rem;
+}
+
+.logo {
+    background-color: #4a7c59;
+    border-radius: 9999px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo svg {
+    width: 3rem;
+    height: 3rem;
+    color: white;
+}
+
+.brand-name {
+    font-size: 2.25rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.slogan-box {
+    background-color: #90cc90;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.slogan-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.slogan-image {
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.nav-inicio {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff5722 !important;
+}
+
+.container a{
+    text-decoration: none;
+}
+
+.auth-item {
+    display: flex;
+    align-items: center;
+    color: #ff5722;
+    cursor: pointer;
+}
+
+.auth-item img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.hotels-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff5722;
+}
+
+.amenity {
+    background-color: #f3f4f6;
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 0.25rem;
+    color: #ff5722;
+}
+
+.hotel-image {
+    height: 12rem;
+    object-fit: cover;
+}
+
+.btn-primary {
+    background-color: #ff5722;
+    border-color: #ff5722;
+}
+
+.btn-primary:hover {
+    background-color: #f4511e;
+    border-color: #f4511e;
+}
+
+.text-primary {
+    color: #ff5722 !important;
+}
+
+.story-link {
+    color: #ff5722;
+    text-decoration: underline;
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-left: 0.5rem;
+}
+
+.auth-item{
+    color: #ff5722;
+}
+
+.nav-item.auth-item a {
+    text-decoration: none;
+    color: #ff5722;
+}
+
+.apertura{
+    max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.apertura .card{
+    align-self: center;
+   max-width: 204px !important;
+   min-height: 264px !important;
+}
+
+@media (max-width:480px){
+    h2{
+        font-size: 1.5rem;
+    }
+    .btn{
+        font-size: 0.8rem;
+    }
+}

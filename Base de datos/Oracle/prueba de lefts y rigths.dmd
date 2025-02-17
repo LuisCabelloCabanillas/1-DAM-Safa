@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="prueba de lefts y rigths" id="8152D3BD-D937-034F-AED8-6FC146234297" version="3.5">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:14:59 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>8152D3BD-D937-034F-AED8-6FC146234297</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="C0DFC2BF-23B2-7F0D-F05E-1C505BCC0433">
+<designStoragePath>C:\</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

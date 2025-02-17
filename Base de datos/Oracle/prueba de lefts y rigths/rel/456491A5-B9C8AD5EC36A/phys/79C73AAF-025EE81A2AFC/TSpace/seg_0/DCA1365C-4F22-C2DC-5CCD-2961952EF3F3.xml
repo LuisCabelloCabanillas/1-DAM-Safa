@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableSpaceOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TableSpaceOraclev10g" name="USERS" directorySegmentName="seg_0" id="DCA1365C-4F22-C2DC-5CCD-2961952EF3F3">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjSchema>C##HELADERIA</sourceObjSchema>
+<sourceObjName>USERS</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:15:39 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<dsInitialExtent>65536</dsInitialExtent>
+<dsMaxExtents>2147483645</dsMaxExtents>
+<emUniformSize>0</emUniformSize>
+<extentManagement>LOCAL</extentManagement>
+<minExtLen>65536</minExtLen>
+<dsCompression>NOCOMPRESS</dsCompression>
+<encrypt>NO</encrypt>
+<fileType>SMALLFILE</fileType>
+<inMemory>NO</inMemory>
+<dataFiles>
+<DataFile class="oracle.dbtools.crest.model.design.storage.oracle.v10g.DataFileOraclev10g" name="USERS01.DBF" id="C13B7628-457A-728E-675C-4F2B3FD8B7A7">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjName>C:\APP\DAM1\PRODUCT\18.0.0\ORADATA\XE\USERS01.DBF</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:48:59 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<autoextend>ON</autoextend>
+<fileName>C:\APP\DAM1\PRODUCT\18.0.0\ORADATA\XE\USERS01.DBF</fileName>
+<nextBlockSize>1280</nextBlockSize>
+<size>5120</size>
+</DataFile>
+</dataFiles>
+</TableSpaceOraclev10g>

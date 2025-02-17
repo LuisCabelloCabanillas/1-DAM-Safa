@@ -1,0 +1,15 @@
+Cadena de hoteles dentro y fuera de españa.
+(Direcciones en el proyecto)
+Reservas para sus hoteles unicamente y facil de reservar e intuitiva amigable, y acceso para todos facil.
+NO pasar por muchos pasos para el registro y pago
+Página web de inicio que salgan ofertas de hoteles y los hoteles mas visitados
+Más votos, Y que aparezca en inicio tamb proximas aperturas(Punta Cana y Puerto Rico).
+Contar la historia en algun lugar de la aplicación.
+Página de inicio se pueda logear o iniciar y que cambie de página. 
+Que siempre haya unión entre ellas. Y responsive completo.
+Hacer un buscador para donde ir, cuando y cuantos.
+Todo esto en el inicio.
+
+Si reservamos al pulsar nos traslade a otro sitio y que se vea un descripcion, con sus comodidades. Y si queremos reserva nos traslade a otra página para ver el método de págo.
+
+Hecho en FIGMA

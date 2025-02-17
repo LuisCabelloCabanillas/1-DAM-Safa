@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8492CB48-62A3-4C01-C01E-3D6CEBD83163" schemaObject="F6E883D4-9189-FC8E-18A7-398D4E8651BB" name="CLIENTES">
+<sourceConnName>HELADERIA</sourceConnName>
+<sourceObjSchema>C##HELADERIA</sourceObjSchema>
+<sourceObjName>CLIENTES</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:15:39 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="E0029313-78F6-EC2A-E631-F28D843A2961">
+<sourceConnName>HELADERIA</sourceConnName>
+<sourceObjSchema>CLIENTES</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:15:39 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE" id="1132863D-8757-5FD9-12DF-C9D350737404">
+<sourceConnName>HELADERIA</sourceConnName>
+<sourceObjSchema>CLIENTES</sourceObjSchema>
+<sourceObjName>NOMBRE</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:15:39 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DIRECCIÓN" id="6701E8D1-D239-54BE-CB01-3784B7C55FD5">
+<sourceConnName>HELADERIA</sourceConnName>
+<sourceObjSchema>CLIENTES</sourceObjSchema>
+<sourceObjName>DIRECCIÓN</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:15:39 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CP" id="B1FC5E57-6ECD-2E8D-BBB4-6575BB7C9E37">
+<sourceConnName>HELADERIA</sourceConnName>
+<sourceObjSchema>CLIENTES</sourceObjSchema>
+<sourceObjName>CP</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:15:39 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TELÉFONO" id="A5055402-B50D-B2A1-01C3-273B2ADB99D7">
+<sourceConnName>HELADERIA</sourceConnName>
+<sourceObjSchema>CLIENTES</sourceObjSchema>
+<sourceObjName>TELÉFONO</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:15:39 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F6E041E3-9A70-6834-CC17-0249089F000E" schemaObject="F6E883D4-9189-FC8E-18A7-398D4E8651BB" name="CLIENTES_PK">
+<sourceConnName>HELADERIA</sourceConnName>
+<sourceObjSchema>C##HELADERIA</sourceObjSchema>
+<sourceObjName>SYS_C007315</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:15:40 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E0029313-78F6-EC2A-E631-F28D843A2961"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

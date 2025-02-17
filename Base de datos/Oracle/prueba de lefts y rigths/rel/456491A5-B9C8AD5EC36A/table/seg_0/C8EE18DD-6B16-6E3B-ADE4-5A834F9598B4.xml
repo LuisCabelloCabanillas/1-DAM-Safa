@@ -1,0 +1,188 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C8EE18DD-6B16-6E3B-ADE4-5A834F9598B4" schemaObject="6D8D41AA-801A-A77D-FB52-3D296986A640" name="DEPARTAMENTOS">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjSchema>C##EMPRESA</sourceObjSchema>
+<sourceObjName>DEPARTAMENTOS</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:48:59 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<importedID>47B0A8F8-6108-E047-8BF3-589476B3A010</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NUMDE" id="AA1C7947-5014-4461-4788-951116D0D2DE">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjSchema>DEPARTAMENTOS</sourceObjSchema>
+<sourceObjName>NUMDE</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:48:59 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<importedID>64F8CA8F-EFBA-E28B-1717-9E8514A5A884</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUMCE" id="DDEC9334-F35C-E21B-F8A0-B289F51DD3CD">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjSchema>DEPARTAMENTOS</sourceObjSchema>
+<sourceObjName>NUMCE</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:48:59 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<importedID>AF44DFF4-D483-AD5F-B4A2-54FC854AD64B</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,4,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="97EBC354-1F4C-B969-2A7F-8D0A5084ECCE" referredColumn="47333884-8B2E-8A83-C01F-24C53DF13D5F"/>
+</associations>
+</Column>
+<Column name="DIREC" id="D8650243-2370-45C5-84D3-DBD157C05A74">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjSchema>DEPARTAMENTOS</sourceObjSchema>
+<sourceObjName>DIREC</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:48:59 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<importedID>CE058DB4-B31E-75CD-AE47-055CE6FEDB61</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIDIR" id="02943F2C-1F74-D8E9-99FE-ECE0B1272C3B">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjSchema>DEPARTAMENTOS</sourceObjSchema>
+<sourceObjName>TIDIR</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:48:59 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<importedID>2B5ECA8E-D7A7-8432-B8C7-6A62BC58693A</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRESU" id="044652B2-8CE0-AF9C-A2FD-691ED5478E64">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjSchema>DEPARTAMENTOS</sourceObjSchema>
+<sourceObjName>PRESU</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:48:59 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<importedID>B060E7A8-3587-BD69-4084-51741FB7D6AB</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,3,1</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEPDE" id="695DF6BF-49D3-9473-8B82-066C6A12173D">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjSchema>DEPARTAMENTOS</sourceObjSchema>
+<sourceObjName>DEPDE</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:48:59 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<importedID>B47B5C19-09F6-63DF-B5E9-A8B45C8FC3D1</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="286455AD-3709-25EE-86E1-8ABE05DDB37C" referredColumn="AA1C7947-5014-4461-4788-951116D0D2DE"/>
+</associations>
+</Column>
+<Column name="NOMDE" id="E56DE5EC-B8D6-10ED-8771-FFFC9404AB44">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjSchema>DEPARTAMENTOS</sourceObjSchema>
+<sourceObjName>NOMDE</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:48:59 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<importedID>2D5F0E13-35EF-D27F-B289-698076208F75</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="38E95029-EED7-683B-C6EC-F9CC8819A869" name="PK_DEPARTAMENTOS">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjSchema>C##EMPRESA</sourceObjSchema>
+<sourceObjName>PK_DEPARTAMENTOS</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:48:59 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<importedID>14FCF3E4-B5C8-E228-4AF3-21919A431626</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AA1C7947-5014-4461-4788-951116D0D2DE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="06066FC3-937E-2998-F168-FE8ED8B80F1C" schemaObject="6D8D41AA-801A-A77D-FB52-3D296986A640" name="PK_DEPARTAMENTOS">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjSchema>C##EMPRESA</sourceObjSchema>
+<sourceObjName>PK_DEPARTAMENTOS</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:48:59 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<importedID>339AEE37-53CA-EE19-65EA-04031FBDF7C4</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AA1C7947-5014-4461-4788-951116D0D2DE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AD88BE35-5C63-3BDF-7BE8-8E970E40BF23" name="FK1_DEPARTAMENTOS">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:48:59 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DDEC9334-F35C-E21B-F8A0-B289F51DD3CD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="11A9CA23-248D-91D6-0CB3-46FD227E6E76" name="FK2_DEPARTAMENTOS">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:48:59 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="695DF6BF-49D3-9473-8B82-066C6A12173D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,12 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<UserOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" name="C##HELADERIA" directorySegmentName="seg_0" id="C04DDEA5-3891-52B0-A2B7-3E5BB206A685">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjName>C##HELADERIA</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:15:38 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<schemaObject>F6E883D4-9189-FC8E-18A7-398D4E8651BB</schemaObject>
+<defTableSpace>DCA1365C-4F22-C2DC-5CCD-2961952EF3F3</defTableSpace>
+<privilegesWithAdminOption>UNLIMITED TABLESPACE</privilegesWithAdminOption>
+<profile>DEFAULT</profile>
+</UserOraclev10g>

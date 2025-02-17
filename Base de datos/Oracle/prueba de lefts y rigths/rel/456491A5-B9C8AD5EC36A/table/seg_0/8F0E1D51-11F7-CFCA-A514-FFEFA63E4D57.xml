@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8F0E1D51-11F7-CFCA-A514-FFEFA63E4D57" schemaObject="F6E883D4-9189-FC8E-18A7-398D4E8651BB" name="PEDIDOS">
+<sourceConnName>HELADERIA</sourceConnName>
+<sourceObjSchema>C##HELADERIA</sourceObjSchema>
+<sourceObjName>PEDIDOS</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:15:39 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="3E799BFD-00A2-1D51-098B-A0A0D3634161">
+<sourceConnName>HELADERIA</sourceConnName>
+<sourceObjSchema>PEDIDOS</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:15:39 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_CLIENTE" id="DFF9FF11-B14E-CCB8-4B4F-B6FCEABBA88F">
+<sourceConnName>HELADERIA</sourceConnName>
+<sourceObjSchema>PEDIDOS</sourceObjSchema>
+<sourceObjName>ID_CLIENTE</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:15:39 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FD051254-ACDE-818B-8C46-F9226CA8318C" referredColumn="E0029313-78F6-EC2A-E631-F28D843A2961"/>
+</associations>
+</Column>
+<Column name="FECHA_PEDIDO" id="EE515A5A-0069-A1ED-119D-44243E4BAB5D">
+<sourceConnName>HELADERIA</sourceConnName>
+<sourceObjSchema>PEDIDOS</sourceObjSchema>
+<sourceObjName>FECHA_PEDIDO</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:15:39 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DEA2077B-FD7A-E8CB-116E-13D54A68DE48" schemaObject="F6E883D4-9189-FC8E-18A7-398D4E8651BB" name="PEDIDOS_PK">
+<sourceConnName>HELADERIA</sourceConnName>
+<sourceObjSchema>C##HELADERIA</sourceObjSchema>
+<sourceObjName>SYS_C007317</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:15:40 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3E799BFD-00A2-1D51-098B-A0A0D3634161"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8B2C9350-4AFD-A7B2-E53F-D38E4289CBBC" name="SYS_C007318">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-12 11:15:40 UTC</createdTime>
+<ownerDesignName>prueba de lefts y rigths</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DFF9FF11-B14E-CCB8-4B4F-B6FCEABBA88F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

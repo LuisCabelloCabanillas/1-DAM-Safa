@@ -1,0 +1,196 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CDE9EA61-6E2F-4D2F-A189-CA9513EDE9D2" schemaObject="327A8D6F-E072-94BA-C62F-ED4C98436123" name="EMPLEADOS">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjSchema>C##EMPRESA</sourceObjSchema>
+<sourceObjName>EMPLEADOS</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-05 11:09:21 UTC</createdTime>
+<ownerDesignName>Si</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NUMEM" id="5AD30B94-5F8A-FEFA-C6DF-F087A9B0179E">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjSchema>EMPLEADOS</sourceObjSchema>
+<sourceObjName>NUMEM</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-05 11:09:22 UTC</createdTime>
+<ownerDesignName>Si</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EXTEL" id="1DE8459B-B8D2-A07C-2E3C-1E9D12E61B19">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjSchema>EMPLEADOS</sourceObjSchema>
+<sourceObjName>EXTEL</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-05 11:09:22 UTC</createdTime>
+<ownerDesignName>Si</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECNA" id="0978FF6E-C3EF-071A-6CD9-296C49DDE410">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjSchema>EMPLEADOS</sourceObjSchema>
+<sourceObjName>FECNA</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-05 11:09:22 UTC</createdTime>
+<ownerDesignName>Si</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECIN" id="E7AF83F1-4D98-07BB-6B7C-99947992C474">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjSchema>EMPLEADOS</sourceObjSchema>
+<sourceObjName>FECIN</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-05 11:09:22 UTC</createdTime>
+<ownerDesignName>Si</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SALAR" id="FE75932B-503D-CFD1-9A0D-7304ADB33FBB">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjSchema>EMPLEADOS</sourceObjSchema>
+<sourceObjName>SALAR</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-05 11:09:22 UTC</createdTime>
+<ownerDesignName>Si</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COMIS" id="688717F5-E95A-B82F-604E-A588D36B5582">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjSchema>EMPLEADOS</sourceObjSchema>
+<sourceObjName>COMIS</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-05 11:09:22 UTC</createdTime>
+<ownerDesignName>Si</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUMHI" id="6BB2C54E-0B59-C68D-C55A-0DDACCC45EA6">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjSchema>EMPLEADOS</sourceObjSchema>
+<sourceObjName>NUMHI</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-05 11:09:22 UTC</createdTime>
+<ownerDesignName>Si</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,1,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMEM" id="38912FF2-C4D2-4A2E-D927-E1B77F92CE11">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjSchema>EMPLEADOS</sourceObjSchema>
+<sourceObjName>NOMEM</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-05 11:09:22 UTC</createdTime>
+<ownerDesignName>Si</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUMDE" id="7FFFF0C6-71CB-49FF-8375-CACC67BA32C1">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjSchema>EMPLEADOS</sourceObjSchema>
+<sourceObjName>NUMDE</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-05 11:09:22 UTC</createdTime>
+<ownerDesignName>Si</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2C02E79A-5304-5E11-8113-37937566E0F5" referredColumn="27EA1F33-5F3D-75BA-34F1-513BDF52B63B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1BC4DD89-8529-213F-FCB9-9CB292537129" name="PK_EMPLEADOS">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjSchema>C##EMPRESA</sourceObjSchema>
+<sourceObjName>PK_EMPLEADOS</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-05 11:09:22 UTC</createdTime>
+<ownerDesignName>Si</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5AD30B94-5F8A-FEFA-C6DF-F087A9B0179E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="72E13793-60A5-DAF7-120E-625E0D8C16CB" schemaObject="327A8D6F-E072-94BA-C62F-ED4C98436123" name="PK_EMPLEADOS">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjSchema>C##EMPRESA</sourceObjSchema>
+<sourceObjName>PK_EMPLEADOS</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-05 11:09:22 UTC</createdTime>
+<ownerDesignName>Si</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5AD30B94-5F8A-FEFA-C6DF-F087A9B0179E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="786733C9-FB71-4FC7-F2EB-CD47CE54CE13" name="FK1_EMPLEADOS">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-05 11:09:22 UTC</createdTime>
+<ownerDesignName>Si</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7FFFF0C6-71CB-49FF-8375-CACC67BA32C1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

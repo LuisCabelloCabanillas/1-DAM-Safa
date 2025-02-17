@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="CENTROS" directorySegmentName="seg_0" id="D68CC905-66A2-001F-DB08-1173BB6EA458">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-05 11:09:21 UTC</createdTime>
+<ownerDesignName>Si</ownerDesignName>
+<schemaObject>327A8D6F-E072-94BA-C62F-ED4C98436123</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>131AF17C-A034-9455-2717-C1627ED10669</segment>
+<tableSpace>32FCDC70-D62A-FB34-AC60-651821C8F484</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="NUMCE" id="A3F999A6-6C3B-D49A-46DA-3EFA0D7FFB8D">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-05 11:09:21 UTC</createdTime>
+<ownerDesignName>Si</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DIRCE" id="A49B1C91-C0FB-850A-84B1-B2AFBBFABAA1">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-05 11:09:21 UTC</createdTime>
+<ownerDesignName>Si</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NOMCE" id="DEFC6693-F897-70FC-DD91-9E709578526F">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-05 11:09:21 UTC</createdTime>
+<ownerDesignName>Si</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_CENTROS" id="98EDB53B-850F-BD59-034D-79DAB1E20CCA">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-05 11:09:22 UTC</createdTime>
+<ownerDesignName>Si</ownerDesignName>
+<schemaObject>327A8D6F-E072-94BA-C62F-ED4C98436123</schemaObject>
+<segment>3A141F62-E536-74DF-57A7-BEA5A3041317</segment>
+<tableSpace>32FCDC70-D62A-FB34-AC60-651821C8F484</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_CENTROS" id="FD339BEF-63A9-5F5F-A5EB-6CBD44346A07">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-05 11:09:22 UTC</createdTime>
+<ownerDesignName>Si</ownerDesignName>
+<segment>3A141F62-E536-74DF-57A7-BEA5A3041317</segment>
+<tableSpace>32FCDC70-D62A-FB34-AC60-651821C8F484</tableSpace>
+<existingIndex>98EDB53B-850F-BD59-034D-79DAB1E20CCA</existingIndex>
+<indexSegment>3A141F62-E536-74DF-57A7-BEA5A3041317</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="CENTROS_NOMCE_UN" id="5DCA2CEA-5BB0-E9B8-CA42-0AEF07096F99">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-05 11:09:22 UTC</createdTime>
+<ownerDesignName>Si</ownerDesignName>
+<schemaObject>327A8D6F-E072-94BA-C62F-ED4C98436123</schemaObject>
+<segment>3A141F62-E536-74DF-57A7-BEA5A3041317</segment>
+<tableSpace>32FCDC70-D62A-FB34-AC60-651821C8F484</tableSpace>
+<indexSegment>3A141F62-E536-74DF-57A7-BEA5A3041317</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev12c>

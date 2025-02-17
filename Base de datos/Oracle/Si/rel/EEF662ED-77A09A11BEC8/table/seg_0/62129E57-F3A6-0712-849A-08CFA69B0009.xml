@@ -1,0 +1,178 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="62129E57-F3A6-0712-849A-08CFA69B0009" schemaObject="327A8D6F-E072-94BA-C62F-ED4C98436123" name="DEPARTAMENTOS">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjSchema>C##EMPRESA</sourceObjSchema>
+<sourceObjName>DEPARTAMENTOS</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-05 11:09:21 UTC</createdTime>
+<ownerDesignName>Si</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NUMDE" id="27EA1F33-5F3D-75BA-34F1-513BDF52B63B">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjSchema>DEPARTAMENTOS</sourceObjSchema>
+<sourceObjName>NUMDE</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-05 11:09:22 UTC</createdTime>
+<ownerDesignName>Si</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUMCE" id="2BE78107-66B2-4376-3E58-767D9DB36A51">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjSchema>DEPARTAMENTOS</sourceObjSchema>
+<sourceObjName>NUMCE</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-05 11:09:22 UTC</createdTime>
+<ownerDesignName>Si</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,4,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DCF3FB42-E366-8504-FDFF-380F9AAC07B4" referredColumn="A3F999A6-6C3B-D49A-46DA-3EFA0D7FFB8D"/>
+</associations>
+</Column>
+<Column name="DIREC" id="96877BA2-A994-3217-E937-4457996A08B6">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjSchema>DEPARTAMENTOS</sourceObjSchema>
+<sourceObjName>DIREC</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-05 11:09:22 UTC</createdTime>
+<ownerDesignName>Si</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIDIR" id="5045A8B1-60AA-8F54-4E2B-1339501749AA">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjSchema>DEPARTAMENTOS</sourceObjSchema>
+<sourceObjName>TIDIR</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-05 11:09:22 UTC</createdTime>
+<ownerDesignName>Si</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRESU" id="83FD9B47-0221-4D07-F547-A7011B6DC71A">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjSchema>DEPARTAMENTOS</sourceObjSchema>
+<sourceObjName>PRESU</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-05 11:09:22 UTC</createdTime>
+<ownerDesignName>Si</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,3,1</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEPDE" id="C2D31252-75F3-6E74-696B-307D084588D5">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjSchema>DEPARTAMENTOS</sourceObjSchema>
+<sourceObjName>DEPDE</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-05 11:09:22 UTC</createdTime>
+<ownerDesignName>Si</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F4A824A4-B36D-76EB-795F-D43193BCA96F" referredColumn="27EA1F33-5F3D-75BA-34F1-513BDF52B63B"/>
+</associations>
+</Column>
+<Column name="NOMDE" id="08BEFC07-F246-9165-BC44-27693BC2E14F">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjSchema>DEPARTAMENTOS</sourceObjSchema>
+<sourceObjName>NOMDE</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-05 11:09:22 UTC</createdTime>
+<ownerDesignName>Si</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="185F1763-60F1-1D01-2FB1-BA1173720B59" name="PK_DEPARTAMENTOS">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjSchema>C##EMPRESA</sourceObjSchema>
+<sourceObjName>PK_DEPARTAMENTOS</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-05 11:09:22 UTC</createdTime>
+<ownerDesignName>Si</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="27EA1F33-5F3D-75BA-34F1-513BDF52B63B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B0BC4E2A-0DE8-343B-BE96-6D0DCAB96382" schemaObject="327A8D6F-E072-94BA-C62F-ED4C98436123" name="PK_DEPARTAMENTOS">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjSchema>C##EMPRESA</sourceObjSchema>
+<sourceObjName>PK_DEPARTAMENTOS</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-05 11:09:22 UTC</createdTime>
+<ownerDesignName>Si</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="27EA1F33-5F3D-75BA-34F1-513BDF52B63B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D093E6B2-52B7-65C8-6B74-839F8E8EF1CC" name="FK1_DEPARTAMENTOS">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-05 11:09:22 UTC</createdTime>
+<ownerDesignName>Si</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2BE78107-66B2-4376-3E58-767D9DB36A51"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="84E90FA3-FFF3-397E-A277-2FB23BA837C5" name="FK2_DEPARTAMENTOS">
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-05 11:09:22 UTC</createdTime>
+<ownerDesignName>Si</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C2D31252-75F3-6E74-696B-307D084588D5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D68CC905-66A2-001F-DB08-1173BB6EA458" schemaObject="327A8D6F-E072-94BA-C62F-ED4C98436123" name="CENTROS">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjSchema>C##EMPRESA</sourceObjSchema>
+<sourceObjName>CENTROS</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-05 11:09:21 UTC</createdTime>
+<ownerDesignName>Si</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NUMCE" id="A3F999A6-6C3B-D49A-46DA-3EFA0D7FFB8D">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjSchema>CENTROS</sourceObjSchema>
+<sourceObjName>NUMCE</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-05 11:09:21 UTC</createdTime>
+<ownerDesignName>Si</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,4,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMCE" id="DEFC6693-F897-70FC-DD91-9E709578526F">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjSchema>CENTROS</sourceObjSchema>
+<sourceObjName>NOMCE</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-05 11:09:21 UTC</createdTime>
+<ownerDesignName>Si</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25 BYTE</dataTypeSize>
+<ownDataTypeParameters>25 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DIRCE" id="A49B1C91-C0FB-850A-84B1-B2AFBBFABAA1">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjSchema>CENTROS</sourceObjSchema>
+<sourceObjName>DIRCE</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-05 11:09:21 UTC</createdTime>
+<ownerDesignName>Si</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25 BYTE</dataTypeSize>
+<ownDataTypeParameters>25 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FD339BEF-63A9-5F5F-A5EB-6CBD44346A07" name="PK_CENTROS">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjSchema>C##EMPRESA</sourceObjSchema>
+<sourceObjName>PK_CENTROS</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-05 11:09:22 UTC</createdTime>
+<ownerDesignName>Si</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A3F999A6-6C3B-D49A-46DA-3EFA0D7FFB8D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5DCA2CEA-5BB0-E9B8-CA42-0AEF07096F99" schemaObject="327A8D6F-E072-94BA-C62F-ED4C98436123" name="CENTROS_NOMCE_UN">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjSchema>C##EMPRESA</sourceObjSchema>
+<sourceObjName>SYS_C007302</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-05 11:09:22 UTC</createdTime>
+<ownerDesignName>Si</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DEFC6693-F897-70FC-DD91-9E709578526F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="98EDB53B-850F-BD59-034D-79DAB1E20CCA" schemaObject="327A8D6F-E072-94BA-C62F-ED4C98436123" name="PK_CENTROS">
+<sourceConnName>EMPRESA</sourceConnName>
+<sourceObjSchema>C##EMPRESA</sourceObjSchema>
+<sourceObjName>PK_CENTROS</sourceObjName>
+<createdBy>dam1</createdBy>
+<createdTime>2025-02-05 11:09:22 UTC</createdTime>
+<ownerDesignName>Si</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A3F999A6-6C3B-D49A-46DA-3EFA0D7FFB8D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

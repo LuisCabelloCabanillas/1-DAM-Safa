@@ -60,3 +60,38 @@ HAVING COUNT(c.nombrecurso)>2;
  SELECT a.nombre|| ' ' ||a.apellido1 || ' ' || a.apellido2 "Alumnos mayores de 26 años"
  FROM alumnos a
  where trunc((sysdate-a.fechanac)/365.25)>26;
+ 
+ /*C.10*/
+ SELECT p.dni, p.nombre,p.apellido1,p.apellido2,
+ (p.sueldo*1.15)||' €' "Sueldo incrementado", COUNT(a.dni) "Cantidad de alumnos"
+ FROM profesores p join cursos c on p.dni=c.profesor
+ join matrículas m on c.códigocurso=m.codcurso
+ join alumnos a on a.dni=m.dnialumno
+ GROUP BY p.dni,p.nombre,p.apellido1,p.apellido2,(p.sueldo*1.15)
+ having COUNT(a.dni)>=3;
+ 
+ /*C.11*/
+ SELECT a.nombre,a.apellido1,a.apellido2,m.codcurso
+ FROM alumnos a left join matrículas m on a.dni=m.dnialumno
+ where m.codcurso is null;
+ 
+ /*C.12*/
+ SELECT c.nombrecurso , m.dnialumno
+ FROM cursos c left JOIN matrículas m on c.códigocurso=m.codcurso
+ where m.dnialumno is null;
+ 
+ /*C.13*/
+ SELECT a.nombre,a.apellido1,a.apellido2,c.nombrecurso
+ FROM alumnos a join matrículas m on a.dni=m.dnialumno
+ right join cursos c on c.códigocurso=m.codcurso
+ where a.nombre is null
+ 
+ union 
+ 
+ SELECT a.nombre,a.apellido1,a.apellido2,m.codcurso
+ FROM alumnos a left join matrículas m on a.dni=m.dnialumno
+ where m.codcurso is null
+ ORDER by 1 desc;
+ 
+ /*C.14*/
+ 

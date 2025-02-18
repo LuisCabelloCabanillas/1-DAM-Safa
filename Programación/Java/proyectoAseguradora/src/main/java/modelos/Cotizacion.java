@@ -1,6 +1,7 @@
 package modelos;
 import java.time.LocalDate;
 import java.util.List;
+import java.util.Objects;
 
 public class Cotizacion {
     private int id;
@@ -14,10 +15,13 @@ public class Cotizacion {
     private boolean tieneAparcamientoPrivado;
     private int numSini5;
     private double precioTERC;
-    
     private double precioTAMP;
     private double precioTRIE;
     private Modalidad modalidadElegida;
+
+    public enum Modalidad {
+        TERC, TAMP, TRIE
+    }
 
     public Cotizacion(int id, int codigo, LocalDate fechaCotizacion, LocalDate fechaInicio, Vehiculo vehiculo,
                       Personas tomador, Conductor conductorPrincipal, List<Conductor> conductoresOcasionales,
@@ -39,8 +43,38 @@ public class Cotizacion {
         this.modalidadElegida = modalidadElegida;
     }
 
-    public enum Modalidad {
-        TERC, TAMP, TRIE
+    public Cotizacion(Cotizacion cotizado){
+        this.id = cotizado.id;
+        this.codigo = cotizado.codigo;
+        this.fechaCotizacion = cotizado.fechaCotizacion;
+        this.fechaInicio = cotizado.fechaInicio;
+        this.vehiculo = cotizado.vehiculo;
+        this.tomador = cotizado.tomador;
+        this.conductorPrincipal = cotizado.conductorPrincipal;
+        this.conductoresOcasionales = cotizado.conductoresOcasionales;
+        this.tieneAparcamientoPrivado = cotizado.tieneAparcamientoPrivado;
+        this.numSini5 = cotizado.numSini5;
+        this.precioTERC = cotizado.precioTERC;
+        this.precioTAMP = cotizado.precioTAMP;
+        this.precioTRIE = cotizado.precioTRIE;
+        this.modalidadElegida = cotizado.modalidadElegida;
+    }
+
+    public Cotizacion(){
+        id = 1;
+        codigo = 1;
+        fechaCotizacion = LocalDate.now();
+        fechaInicio = LocalDate.now();
+        vehiculo = new Vehiculo();
+        tomador = new Personas();
+        conductorPrincipal = new Conductor();
+        conductoresOcasionales = List.of(new Conductor());
+        tieneAparcamientoPrivado = true;
+        numSini5 = 1;
+        precioTERC = 1.0;
+        precioTAMP = 1.0;
+        precioTRIE = 1.0;
+        modalidadElegida = Modalidad.TERC;
     }
 
     public int getId() {
@@ -153,5 +187,37 @@ public class Cotizacion {
 
     public void setModalidadElegida(Modalidad modalidadElegida) {
         this.modalidadElegida = modalidadElegida;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Cotizacion that = (Cotizacion) o;
+        return id == that.id && codigo == that.codigo && tieneAparcamientoPrivado == that.tieneAparcamientoPrivado && numSini5 == that.numSini5 && Double.compare(precioTERC, that.precioTERC) == 0 && Double.compare(precioTAMP, that.precioTAMP) == 0 && Double.compare(precioTRIE, that.precioTRIE) == 0 && Objects.equals(fechaCotizacion, that.fechaCotizacion) && Objects.equals(fechaInicio, that.fechaInicio) && Objects.equals(vehiculo, that.vehiculo) && Objects.equals(tomador, that.tomador) && Objects.equals(conductorPrincipal, that.conductorPrincipal) && Objects.equals(conductoresOcasionales, that.conductoresOcasionales) && modalidadElegida == that.modalidadElegida;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, codigo, fechaCotizacion, fechaInicio, vehiculo, tomador, conductorPrincipal, conductoresOcasionales, tieneAparcamientoPrivado, numSini5, precioTERC, precioTAMP, precioTRIE, modalidadElegida);
+    }
+
+    @Override
+    public String toString() {
+        return "Cotizacion{" +
+                "id=" + id +
+                ", codigo=" + codigo +
+                ", fechaCotizacion=" + fechaCotizacion +
+                ", fechaInicio=" + fechaInicio +
+                ", vehiculo=" + vehiculo +
+                ", tomador=" + tomador +
+                ", conductorPrincipal=" + conductorPrincipal +
+                ", conductoresOcasionales=" + conductoresOcasionales +
+                ", tieneAparcamientoPrivado=" + tieneAparcamientoPrivado +
+                ", numSini5=" + numSini5 +
+                ", precioTERC=" + precioTERC +
+                ", precioTAMP=" + precioTAMP +
+                ", precioTRIE=" + precioTRIE +
+                ", modalidadElegida=" + modalidadElegida +
+                '}';
     }
 }

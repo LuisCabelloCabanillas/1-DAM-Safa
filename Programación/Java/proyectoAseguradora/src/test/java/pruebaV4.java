@@ -1,4 +1,7 @@
+import com.aseguradora.utils.SoporteVehiculos;
+import com.aseguradora.utils.Tarifa;
 import modelos.*;
+import utilidades.UtilidadesMultiplicadores;
 
 import java.time.LocalDate;
 
@@ -15,5 +18,16 @@ public class pruebaV4 {
 
         System.out.println();*/
 
+        UtilidadesMultiplicadores utilidades = new UtilidadesMultiplicadores(SoporteVehiculos.getInstance());
+
+        try {
+            Tarifa tarifa = utilidades.calcularTarifaExtendida("Toyota", "Corolla", 2018, "41001", false, false, true, 2);
+            System.out.println("Tarifa calculada:");
+            System.out.println("Precio TERC: " + tarifa.getPrecioTERC());
+            System.out.println("Precio TAMP: " + tarifa.getPrecioTAMP());
+            System.out.println("Precio TRIE: " + tarifa.getPrecioTRIE());
+        } catch (IllegalArgumentException e) {
+            System.err.println("Error al calcular la tarifa: " + e.getMessage());
+        }
     }
 }

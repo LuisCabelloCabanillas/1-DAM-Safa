@@ -21,6 +21,23 @@ public class Poliza {
     private LocalDate fechaFinAnualidad;
     private LocalDate fechaAnulacion;
 
+    public Poliza(int id, String numero, List<AnualidadPoliza> anualidades, AnualidadPoliza.EstadoPoliza estadoPoliza, String motivoAnulacion, Cotizacion ultimaCotizacionBase, Personas tomador, Conductor conductorPrincipal, List<Conductor> conductoresOcasionales, double precioModalidad, double precioFinal, LocalDate fechaInicioAnualidad, LocalDate fechaFinAnualidad, LocalDate fechaAnulacion) {
+        this.id = id;
+        this.numero = anualidades.getFirst().getNumero();
+        this.anualidades = anualidades;
+        this.estadoPoliza = estadoPoliza;
+        this.motivoAnulacion = motivoAnulacion;
+        this.ultimaCotizacionBase = ultimaCotizacionBase;
+        this.tomador = tomador;
+        this.conductorPrincipal = conductorPrincipal;
+        this.conductoresOcasionales = conductoresOcasionales;
+        this.precioModalidad = precioModalidad;
+        this.precioFinal = precioFinal;
+        this.fechaInicioAnualidad = fechaInicioAnualidad;
+        this.fechaFinAnualidad = fechaFinAnualidad;
+        this.fechaAnulacion = fechaAnulacion;
+    }
+
     public Poliza () {
         id = 1;
         numero = "123456";
@@ -165,6 +182,18 @@ public class Poliza {
 
     public void setFechaAnulacion(LocalDate fechaAnulacion) {
         this.fechaAnulacion = fechaAnulacion;
+    }
+
+    public static String estadoPoliza(Poliza poliza) {
+        String estadopoliza;
+        if (poliza.getEstadoPoliza() == AnualidadPoliza.EstadoPoliza.VIGENTE) {
+            estadopoliza= "Vigente";
+        } else if (poliza.getEstadoPoliza() == AnualidadPoliza.EstadoPoliza.ANULADA) {
+            estadopoliza= "Anulada";
+        } else {
+            estadopoliza = "No aplica";
+        }
+        return estadopoliza;
     }
 
     @Override

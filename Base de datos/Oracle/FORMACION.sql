@@ -56,42 +56,47 @@ join alumnos a on a.dni = m.dnialumno
 group by c.nombrecurso
 HAVING COUNT(c.nombrecurso)>2;
 
- /*C.9*/
- SELECT a.nombre|| ' ' ||a.apellido1 || ' ' || a.apellido2 "Alumnos mayores de 26 años"
- FROM alumnos a
- where trunc((sysdate-a.fechanac)/365.25)>26;
+/*C.9*/
+SELECT a.nombre|| ' ' ||a.apellido1 || ' ' || a.apellido2 "Alumnos mayores de 26 años"
+FROM alumnos a
+where trunc((sysdate-a.fechanac)/365.25)>26;
+
+/*C.10*/
+SELECT p.dni, p.nombre,p.apellido1,p.apellido2,
+(p.sueldo*1.15)||' €' "Sueldo incrementado", COUNT(a.dni) "Cantidad de alumnos"
+FROM profesores p join cursos c on p.dni=c.profesor
+join matrículas m on c.códigocurso=m.codcurso
+join alumnos a on a.dni=m.dnialumno
+GROUP BY p.dni,p.nombre,p.apellido1,p.apellido2,(p.sueldo*1.15)
+having COUNT(a.dni)>=3;
  
- /*C.10*/
- SELECT p.dni, p.nombre,p.apellido1,p.apellido2,
- (p.sueldo*1.15)||' €' "Sueldo incrementado", COUNT(a.dni) "Cantidad de alumnos"
- FROM profesores p join cursos c on p.dni=c.profesor
- join matrículas m on c.códigocurso=m.codcurso
- join alumnos a on a.dni=m.dnialumno
- GROUP BY p.dni,p.nombre,p.apellido1,p.apellido2,(p.sueldo*1.15)
- having COUNT(a.dni)>=3;
+/*C.11*/
+SELECT a.nombre,a.apellido1,a.apellido2,m.codcurso
+FROM alumnos a left join matrículas m on a.dni=m.dnialumno
+where m.codcurso is null;
  
- /*C.11*/
- SELECT a.nombre,a.apellido1,a.apellido2,m.codcurso
- FROM alumnos a left join matrículas m on a.dni=m.dnialumno
- where m.codcurso is null;
+/*C.12*/
+SELECT c.nombrecurso , m.dnialumno
+FROM cursos c left JOIN matrículas m on c.códigocurso=m.codcurso
+where m.dnialumno is null;
  
- /*C.12*/
- SELECT c.nombrecurso , m.dnialumno
- FROM cursos c left JOIN matrículas m on c.códigocurso=m.codcurso
- where m.dnialumno is null;
+/*C.13*/
+select a.nombre,a.apellido1, a.apellido2,c.nombrecurso
+from alumnos a full join matrículas m on a.dni=m.dnialumno full join cursos c on c.códigocurso=m.codcurso
+where a.nombre is null or c.nombrecurso is null;
  
- /*C.13*/
- SELECT a.nombre,a.apellido1,a.apellido2,c.nombrecurso
- FROM alumnos a join matrículas m on a.dni=m.dnialumno
- right join cursos c on c.códigocurso=m.codcurso
- where a.nombre is null
- 
- union 
- 
- SELECT a.nombre,a.apellido1,a.apellido2,m.codcurso
- FROM alumnos a left join matrículas m on a.dni=m.dnialumno
- where m.codcurso is null
- ORDER by 1 desc;
- 
- /*C.14*/
- 
+/*C.14*/
+Select p.nombre, p.apellido1, p.apellido2, c.nombrecurso
+from cursos c right join profesores p on c.profesor=p.dni
+where c.nombrecurso is null;
+
+/*C.15*/
+Select count(p.nombre)"Profesores sin curso" 
+from cursos c right join profesores p on c.profesor=p.dni
+where c.nombrecurso is null
+group by c.nombrecurso;
+
+select count(*) "Profesores sin curso"
+from (Select p.nombre, p.apellido1, p.apellido2, c.nombrecurso
+from cursos c right join profesores p on c.profesor=p.dni
+where c.nombrecurso is null);

@@ -1,9 +1,13 @@
 package modelos;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.List;
 import java.util.Objects;
 import java.util.Scanner;
+
+import static jdk.jfr.internal.test.DeprecatedMethods.counter;
 
 public class AnualidadPoliza {
     private int id;
@@ -28,21 +32,19 @@ public class AnualidadPoliza {
     public AnualidadPoliza(int id, String numero, EstadoPoliza estadoPoliza,
                            String motivoAnulacion, Cotizacion cotizacionBase,
                            ModoPago modoPago, boolean esPagoFraccionado,
-                           Personas tomador, Conductor conductorPrincipal,
-                           List<Conductor> conductoresOcasionales,
                            double precioModalidad, double precioFinal,
                            LocalDate fechaInicioAnualidad,
                            LocalDate fechaFinAnualidad, LocalDate fechaAnulacion) {
         this.id = id;
-        this.numero = numero;
+        this.numero = generadorNumeroPoliza();
         this.estadoPoliza = estadoPoliza;
         this.motivoAnulacion = motivoAnulacion;
         this.cotizacionBase = cotizacionBase;
         this.modoPago = modoPago;
         this.esPagoFraccionado = esPagoFraccionado;
-        this.tomador = tomador;
-        this.conductorPrincipal = conductorPrincipal;
-        this.conductoresOcasionales = conductoresOcasionales;
+        this.tomador = new Personas(cotizacionBase.getTomador());
+        this.conductorPrincipal = new Conductor(cotizacionBase.getConductorPrincipal());
+        this.conductoresOcasionales = new ArrayList<>(cotizacionBase.getConductoresOcasionales());
         this.precioModalidad = precioModalidad;
         this.precioFinal = precioFinal;
         this.fechaInicioAnualidad = fechaInicioAnualidad;
@@ -206,12 +208,12 @@ public class AnualidadPoliza {
         this.fechaAnulacion = fechaAnulacion;
     }
 
+    private static final AtomicInteger contador = new AtomicInteger(0);
 
-
-    public static String generadorNumeroPoliza(String aseguradora, int contador, LocalDate fechaInicioAnualidad) {
-        String letrasAseguradora = aseguradora.substring(0, 3).toUpperCase();
-        int year = fechaInicioAnualidad.getYear();
-        return String.format("%s/%d/%06d", letrasAseguradora, year, contador);
+    public static String generadorNumeroPoliza() {
+        int contado = contador.incrementAndGet();
+        String numero = "LUS/" + LocalDate.now().getYear() + "/" + String.format("%06d", contado);
+        return numero;
     }
 
     public static String formaDePago(String formaPago) {
@@ -234,7 +236,12 @@ public class AnualidadPoliza {
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         AnualidadPoliza that = (AnualidadPoliza) o;
-        return id == that.id && esPagoFraccionado == that.esPagoFraccionado && Double.compare(precioModalidad, that.precioModalidad) == 0 && Double.compare(precioFinal, that.precioFinal) == 0 && Objects.equals(numero, that.numero) && estadoPoliza == that.estadoPoliza && Objects.equals(motivoAnulacion, that.motivoAnulacion) && Objects.equals(cotizacionBase, that.cotizacionBase) && modoPago == that.modoPago && Objects.equals(tomador, that.tomador) && Objects.equals(conductorPrincipal, that.conductorPrincipal) && Objects.equals(conductoresOcasionales, that.conductoresOcasionales) && Objects.equals(fechaInicioAnualidad, that.fechaInicioAnualidad) && Objects.equals(fechaFinAnualidad, that.fechaFinAnualidad) && Objects.equals(fechaAnulacion, that.fechaAnulacion);
+        return id == that.id && esPagoFraccionado == that.esPagoFraccionado && Double.compare(precioModalidad, that.precioModalidad) == 0 &&
+                Double.compare(precioFinal, that.precioFinal) == 0 && Objects.equals(numero, that.numero) && estadoPoliza == that.estadoPoliza &&
+                Objects.equals(motivoAnulacion, that.motivoAnulacion) && Objects.equals(cotizacionBase, that.cotizacionBase) && modoPago == that.modoPago &&
+                Objects.equals(tomador, that.tomador) && Objects.equals(conductorPrincipal, that.conductorPrincipal) &&
+                Objects.equals(conductoresOcasionales, that.conductoresOcasionales) && Objects.equals(fechaInicioAnualidad,
+                that.fechaInicioAnualidad) && Objects.equals(fechaFinAnualidad, that.fechaFinAnualidad) && Objects.equals(fechaAnulacion, that.fechaAnulacion);
     }
 
     @Override

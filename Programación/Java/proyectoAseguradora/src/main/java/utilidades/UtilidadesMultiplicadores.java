@@ -30,9 +30,9 @@ public class UtilidadesMultiplicadores {
             multiplicador *= (1 + (0.1 * siniestros));
         }
 
-        double precioTERC = tarifaBase.getPrecioTERC() * multiplicador;
-        double precioTAMP = tarifaBase.getPrecioTAMP() * multiplicador;
-        double precioTRIE = tarifaBase.getPrecioTRIE() * multiplicador;
+        double precioTERC = Math.round(tarifaBase.getPrecioTERC() * multiplicador * (double)100 )/ (double) 100;
+        double precioTAMP = Math.round(tarifaBase.getPrecioTAMP() * multiplicador * (double)100)/ (double) 100;
+        double precioTRIE = Math.round(tarifaBase.getPrecioTRIE() * multiplicador * (double)100)/ (double) 100;
 
         return new Tarifa(marca, modelo, anyo, precioTERC, precioTAMP, precioTRIE);
     }

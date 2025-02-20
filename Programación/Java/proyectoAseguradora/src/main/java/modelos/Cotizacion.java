@@ -29,7 +29,7 @@ public class Cotizacion {
                       Modalidad modalidadElegida) {
         this.id = id;
         this.codigo = codigo;
-        this.fechaCotizacion = fechaCotizacion;
+        this.fechaCotizacion = LocalDate.now();
         this.fechaInicio = fechaInicio;
         this.vehiculo = vehiculo;
         this.tomador = tomador;

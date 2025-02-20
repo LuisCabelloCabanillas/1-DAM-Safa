@@ -26,6 +26,7 @@ public class pruebaV4 {
             System.out.println("Precio TERC: " + tarifa.getPrecioTERC());
             System.out.println("Precio TAMP: " + tarifa.getPrecioTAMP());
             System.out.println("Precio TRIE: " + tarifa.getPrecioTRIE());
+            System.out.println(tarifa);
         } catch (IllegalArgumentException e) {
             System.err.println("Error al calcular la tarifa: " + e.getMessage());
         }

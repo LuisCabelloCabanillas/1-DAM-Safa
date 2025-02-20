@@ -10,13 +10,16 @@ public class Aseguradora {
     private Direccion direccion;
     private String telefono;
     private List<Vehiculo> vehiculosAsegurados;
+    private List<Poliza> listaPolizas;
 
-    public Aseguradora(int id, String nombre, Direccion direccion, String telefono, List<Vehiculo> vehiculosAsegurados) {
+    public Aseguradora(int id, String nombre, Direccion direccion,
+                       String telefono, List<Vehiculo> vehiculosAsegurados) {
         this.id = id;
         this.nombre = nombre;
         this.direccion = direccion;
         this.telefono = telefono;
         this.vehiculosAsegurados = vehiculosAsegurados;
+        this.listaPolizas = new ArrayList<Poliza>();
     }
 
     public Aseguradora() {
@@ -75,6 +78,22 @@ public class Aseguradora {
         this.vehiculosAsegurados = vehiculosAsegurados;
     }
 
+    public List<Poliza> getListaPolizas() {
+        return listaPolizas;
+    }
+    public void setListaPolizas(List<Poliza> listaPolizas) {
+        this.listaPolizas = listaPolizas;
+    }
+
+    public void addPoliza(Poliza poliza) {
+        this.listaPolizas.add(poliza);
+    }
+
+    public void removePoliza(String poliza) {
+        listaPolizas.removeIf(p -> p.getNumero().equals(poliza));
+    }
+
+
     @Override
     public String toString() {
         return "Aseguradora{" +
@@ -83,6 +102,7 @@ public class Aseguradora {
                 ", direccion=" + direccion +
                 ", telefono='" + telefono + '\'' +
                 ", vehiculosAsegurados=" + vehiculosAsegurados +
+                ", listaPolizas=" + listaPolizas +
                 '}';
     }
 
@@ -90,7 +110,7 @@ public class Aseguradora {
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         Aseguradora that = (Aseguradora) o;
-        return id == that.id && Objects.equals(nombre, that.nombre) && Objects.equals(direccion, that.direccion) && Objects.equals(telefono, that.telefono) && Objects.equals(vehiculosAsegurados, that.vehiculosAsegurados);
+        return id == that.id && Objects.equals(nombre, that.nombre) && Objects.equals(direccion, that.direccion) && Objects.equals(telefono, that.telefono) && Objects.equals(vehiculosAsegurados, that.vehiculosAsegurados) && Objects.equals(listaPolizas, that.listaPolizas);
     }
 
     @Override

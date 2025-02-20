@@ -29,7 +29,7 @@ public class AnualidadPoliza {
     public enum EstadoPoliza { VIGENTE, ANULADA, VENCIDA }
     public enum ModoPago { IBAN, TARJETA }
 
-    public AnualidadPoliza(int id, String numero, EstadoPoliza estadoPoliza,
+    public AnualidadPoliza(int id, EstadoPoliza estadoPoliza,
                            String motivoAnulacion, Cotizacion cotizacionBase,
                            ModoPago modoPago, boolean esPagoFraccionado,
                            double precioModalidad, double precioFinal,

@@ -21,21 +21,21 @@ public class Poliza {
     private LocalDate fechaFinAnualidad;
     private LocalDate fechaAnulacion;
 
-    public Poliza(int id, String numero, List<AnualidadPoliza> anualidades, AnualidadPoliza.EstadoPoliza estadoPoliza, String motivoAnulacion, Cotizacion ultimaCotizacionBase, Personas tomador, Conductor conductorPrincipal, List<Conductor> conductoresOcasionales, double precioModalidad, double precioFinal, LocalDate fechaInicioAnualidad, LocalDate fechaFinAnualidad, LocalDate fechaAnulacion) {
+    public Poliza(int id, List<AnualidadPoliza> anualidades, AnualidadPoliza.EstadoPoliza estadoPoliza, String motivoAnulacion, Cotizacion ultimaCotizacionBase) {
         this.id = id;
         this.numero = anualidades.getFirst().getNumero();
         this.anualidades = anualidades;
         this.estadoPoliza = estadoPoliza;
         this.motivoAnulacion = motivoAnulacion;
         this.ultimaCotizacionBase = ultimaCotizacionBase;
-        this.tomador = tomador;
-        this.conductorPrincipal = conductorPrincipal;
-        this.conductoresOcasionales = conductoresOcasionales;
-        this.precioModalidad = precioModalidad;
-        this.precioFinal = precioFinal;
-        this.fechaInicioAnualidad = fechaInicioAnualidad;
-        this.fechaFinAnualidad = fechaFinAnualidad;
-        this.fechaAnulacion = fechaAnulacion;
+        this.tomador = anualidades.getFirst().getTomador();
+        this.conductorPrincipal = anualidades.getFirst().getConductorPrincipal();
+        this.conductoresOcasionales = anualidades.getFirst().getConductoresOcasionales();
+        this.precioModalidad = anualidades.getFirst().getPrecioModalidad();
+        this.precioFinal = anualidades.getFirst().getPrecioFinal();
+        this.fechaInicioAnualidad = anualidades.getFirst().getFechaInicioAnualidad();
+        this.fechaFinAnualidad = anualidades.getFirst().getFechaFinAnualidad();
+        this.fechaAnulacion = anualidades.getFirst().getFechaAnulacion();
     }
 
     public Poliza () {

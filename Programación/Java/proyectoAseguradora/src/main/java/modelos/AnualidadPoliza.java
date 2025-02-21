@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 import static jdk.jfr.internal.test.DeprecatedMethods.counter;
 
-public class AnualidadPoliza {
+public class AnualidadPoliza extends Poliza {
     private int id;
     private String numero;
     private EstadoPoliza estadoPoliza;

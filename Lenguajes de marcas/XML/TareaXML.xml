@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ejercicio1>
+    <cancion>
+        <titulo>Rock with you</titulo>
+        <compositor>Rod Temperton</compositor>
+        <productor>Quincy Jones</productor>
+        <discográfica>Epic</discográfica>
+        <artista>Michael Jackson</artista>
+    </cancion>
+</Ejercicio1>
+
+<Ejercicio2>
+    <cancion duracion="3:40" año="1979">
+        <titulo>Rock with you</titulo>
+        <compositores>
+            <compositor>
+                <nombre>Rod</nombre>
+                <apellidos>Temperton</apellidos>
+            </compositor>
+        </compositores>
+        <discográfica>Epic</discográfica>
+        <productores>
+            <productor>
+                <nombre>Quincy</nombre>
+                <apellidos>Jones</apellidos>
+            </productor>
+        </productores>
+        <artista>Michael Jackson</artista>
+    </cancion>
+</Ejercicio2>
+
+<Ejercicio3>
+    <servidores>
+        <servidor1>
+            <IDServidor>01</IDServidor>
+            <Ubicación>Sevilla</Ubicación>
+            <hardware>
+                <placa_bases>
+                    <placa_base tlaca="ATX"></placa_base>
+                    <placa_base tplaca="AT"></placa_base>
+                </placa_bases>
+                <RAM></RAM>
+                <RAMS_Mem>
+                    <RAM_Mem cantidad_memoria="amp"></RAM_Mem>
+                    <RAM_Mem cantidad_memoria="Ghz"></RAM_Mem>
+                </RAMS_Mem>
+                <Vel_RAM veloc="Ghz"></Vel_RAM>
+                <Tec_disco></Tec_disco>
+                <cap_disco magnitud="ahd"></cap_disco>
+                <cap_disco magnitud="Tb"></cap_disco>
+                <tip_tarjetaRed></tip_tarjetaRed>
+            </hardware>
+            <Marca marca="HP">Logitech</Marca>
+            <Marca marca="IBM">Logitech</Marca>
+            <Uso tipo="Correo">Ratón</Uso>
+            <Uso tipo="Ofimática">Ratón</Uso>
+            <Uso tipo="DiseñoGráfico">Ratón</Uso>
+            <Uso tipo="ERP/CRM">Ratón</Uso>
+            <Uso tipo="DNS">Ratón</Uso>
+            <Fecha_UF>21/02/2025</Fecha_UF>
+        </servidor1>
+        <servidor2>
+               <IDServidor>01</IDServidor>
+            <Ubicación>Sevilla</Ubicación>
+            <hardware>
+                <placa_bases>
+                    <placa_base tlaca="ATX"></placa_base>
+                    <placa_base tplaca="AT"></placa_base>
+                </placa_bases>
+                <RAM></RAM>
+                <RAMS_Mem>
+                    <RAM_Mem cantidad_memoria="amp"></RAM_Mem>
+                    <RAM_Mem cantidad_memoria="Ghz"></RAM_Mem>
+                </RAMS_Mem>
+                <Vel_RAM veloc="Ghz"></Vel_RAM>
+                <Tec_disco></Tec_disco>
+                <cap_disco magnitud="ahd"></cap_disco>
+                <cap_disco magnitud="Tb"></cap_disco>
+                <tip_tarjetaRed></tip_tarjetaRed>
+            </hardware>
+            <Marca marca="HP">Logitech</Marca>
+            <Marca marca="IBM">Logitech</Marca>
+            <Uso tipo="Correo">Ratón</Uso>
+            <Uso tipo="Ofimática">Ratón</Uso>
+            <Uso tipo="DiseñoGráfico">Ratón</Uso>
+            <Uso tipo="ERP/CRM">Ratón</Uso>
+            <Uso tipo="DNS">Ratón</Uso>
+            <Fecha_UF>21/02/2025</Fecha_UF>
+        </servidor2>
+        <servidor3>
+               <IDServidor>01</IDServidor>
+            <Ubicación>Sevilla</Ubicación>
+            <hardware>
+                <placa_bases>
+                    <placa_base tlaca="ATX"></placa_base>
+                    <placa_base tplaca="AT"></placa_base>
+                </placa_bases>
+                <RAM></RAM>
+                <RAMS_Mem>
+                    <RAM_Mem cantidad_memoria="amp"></RAM_Mem>
+                    <RAM_Mem cantidad_memoria="Ghz"></RAM_Mem>
+                </RAMS_Mem>
+                <Vel_RAM veloc="Ghz"></Vel_RAM>
+                <Tec_disco></Tec_disco>
+                <cap_disco magnitud="ahd"></cap_disco>
+                <cap_disco magnitud="Tb"></cap_disco>
+                <tip_tarjetaRed></tip_tarjetaRed>
+            </hardware>
+            <Marca marca="HP">Logitech</Marca>
+            <Marca marca="IBM">Logitech</Marca>
+            <Uso tipo="Correo">Ratón</Uso>
+            <Uso tipo="Ofimática">Ratón</Uso>
+            <Uso tipo="DiseñoGráfico">Ratón</Uso>
+            <Uso tipo="ERP/CRM">Ratón</Uso>
+            <Uso tipo="DNS">Ratón</Uso>
+            <Fecha_UF>21/02/2025</Fecha_UF>
+        </servidor3>
+    </servidores>
+</Ejercicio3>
+
+<Ejercicio4>
+<?xml version="1.0" encoding="UTF-8"?>
+<Ebooks>
+    <Ebook>
+        <Título>Lenguaje de Marcas</Título>
+        <Autores>
+            <Autor>Alex Tolon</Autor>
+        </Autores>
+        <Módulo>LMSGI</Módulo>
+        <Licencia>CC3.0</Licencia>
+        <Fecha_Publicación>2011-09-15</Fecha_Publicación>
+        <ISBN>978929212456</ISBN>
+        <Lecciones>
+            <Lección número="1">
+                <Párrafo>Introducción a los lenguajes de marcas.</Párrafo>
+                <Párrafo>Historia y evolución de los lenguajes de marcas.</Párrafo>
+                <Imagen>imagen1.jpg</Imagen>
+                <Autoevaluación>¿Qué es un lenguaje de marcas?</Autoevaluación>
+                <Autoevaluación>¿Cuál es la diferencia entre XML y HTML?</Autoevaluación>
+                <Ejercicio>Crea un documento XML con una estructura básica.</Ejercicio>
+            </Lección>
+            <Lección número="2">
+                <Párrafo>Principios del XML y su sintaxis.</Párrafo>
+                <Párrafo>DTD y XML Schema.</Párrafo>
+                <Párrafo>Aplicaciones de XML en la web.</Párrafo>
+                <Animación>animacion1.gif</Animación>
+                <Autoevaluación>Define los principales componentes de XML.</Autoevaluación>
+                <Ejercicio>Valida un documento XML con DTD.</Ejercicio>
+            </Lección>
+        </Lecciones>
+    </Ebook>
+
+    <Ebook>
+        <Título>Empresa e Iniciativa Emprendedora</Título>
+        <Autores>
+            <Autor>Miguel Ángel Sánchez</Autor>
+            <Autor>Xabier Epelde</Autor>
+        </Autores>
+        <Módulo>EIE</Módulo>
+        <Licencia>Public Domain</Licencia>
+        <Fecha_Publicación>2010-06-25</Fecha_Publicación>
+        <ISBN>978439288416</ISBN>
+        <Lecciones>
+            <Lección número="1">
+                <Párrafo>Mejores iniciativas.</Párrafo>
+                <Párrafo>Características que debes de tener.</Párrafo>
+                <Párrafo>Pasos para la creación de una empresa.</Párrafo>
+                <Animación>animacion1.gif</Animación>
+                <Animación>animacion2.gif</Animación>
+                <Autoevaluación>¿Cuáles son las principales cualidades de un emprendedor?</Autoevaluación>
+                <Ejercicio>Elabora un plan de negocios básico.</Ejercicio>
+                <Ejercicio>Define el modelo Canvas de emprendimiento.</Ejercicio>
+            </Lección>
+        </Lecciones>
+    </Ebook>
+</Ebooks>
+
+</Ejercicio4>

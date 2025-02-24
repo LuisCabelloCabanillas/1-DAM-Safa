@@ -29,11 +29,11 @@ public class UtilidadesAseguradora {
 
     public static List<Poliza> recuperarPolizaPorTomador (Aseguradora aseguradora, String nif){
         List<Poliza> polizasTomador = new ArrayList<>();
-            for (Poliza poliza: aseguradora.getListaPolizas()){
-                if (poliza.getTomador().getNif().equals(nif)){
-                    polizasTomador.add(poliza);
-                }
+        for (Poliza poliza: aseguradora.getListaPolizas()){
+            if (poliza.getTomador().getNif().equals(nif)){
+                polizasTomador.add(poliza);
             }
+        }
         return polizasTomador;
     }
 

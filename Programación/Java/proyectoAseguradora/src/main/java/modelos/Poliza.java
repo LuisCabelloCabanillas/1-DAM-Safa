@@ -212,21 +212,22 @@ public class Poliza {
     public String toString() {
         return "Poliza{" +
                 "id=" + id +
-                ", numero='" + numero + '\'' +
-                ", anualidades=" + anualidades +
-                ", estadoPoliza=" + estadoPoliza +
-                ", motivoAnulacion='" + motivoAnulacion + '\'' +
-                ", ultimaCotizacionBase=" + ultimaCotizacionBase +
-                ", tomador=" + tomador +
-                ", conductorPrincipal=" + conductorPrincipal +
-                ", conductoresOcasionales=" + conductoresOcasionales +
-                ", precioModalidad=" + precioModalidad +
-                ", precioFinal=" + precioFinal +
-                ", fechaInicioAnualidad=" + fechaInicioAnualidad +
-                ", fechaFinAnualidad=" + fechaFinAnualidad +
-                ", fechaAnulacion=" + fechaAnulacion +
+                ", numero='" + numero + '\n' +
+                ", anualidades=" + anualidades +'\n' +
+                ", estadoPoliza=" + estadoPoliza +'\n' +
+                ", motivoAnulacion='" + motivoAnulacion + '\n' +
+                ", ultimaCotizacionBase=" + ultimaCotizacionBase +'\n' +
+                ", tomador=" + tomador +'\n' +
+                ", conductorPrincipal=" + conductorPrincipal.getNombre()+" "+conductorPrincipal.getApellido1()+ " " +conductorPrincipal.getApellido2() +'\n' +
+                ", conductoresOcasionales=" + conductoresOcasionales +'\n' +
+                ", precioModalidad=" + precioModalidad +'\n' +
+                ", precioFinal=" + precioFinal +'\n' +
+                ", fechaInicioAnualidad=" + fechaInicioAnualidad +'\n' +
+                ", fechaFinAnualidad=" + fechaFinAnualidad +'\n' +
+                ", fechaAnulacion=" + fechaAnulacion +'\n' +
                 '}';
     }
+
 }
 
 

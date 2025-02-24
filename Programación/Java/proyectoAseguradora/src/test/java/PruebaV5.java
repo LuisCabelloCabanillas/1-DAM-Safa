@@ -32,16 +32,21 @@ public class PruebaV5 {
         anualidad3.setConductorPrincipal(conductor3);
 
         Poliza poliza1 = new Poliza(1, List.of(anualidad1), AnualidadPoliza.EstadoPoliza.VIGENTE, "No aplica", new Cotizacion());
+        Poliza poliza2 = new Poliza(2, List.of(anualidad2), AnualidadPoliza.EstadoPoliza.VIGENTE, "No aplica", new Cotizacion());
+        Poliza poliza3 = new Poliza(3, List.of(anualidad3), AnualidadPoliza.EstadoPoliza.ANULADA, "Motivo de anulación", new Cotizacion());
 
         // Create an Aseguradora instance and add the polizas
         Aseguradora aseguradora = new Aseguradora(1, "Aseguradora XYZ", direccion, "123456789", new ArrayList<>());
         aseguradora.addPoliza(poliza1);
+        aseguradora.addPoliza(poliza2);
+        aseguradora.addPoliza(poliza3);
 
         // Test the methods in UtilidadesAseguradora
 
         System.out.println("Recuperar Poliza POL001: " + UtilidadesAseguradora.recuperarPoliza(aseguradora, 1));
         System.out.println("Recuperar Polizas Activas: " + UtilidadesAseguradora.recuperarPolizaActivas(aseguradora));
-        System.out.println("Recuperar Polizas por Tomador (DNI 12345678Z): " + UtilidadesAseguradora.recuperarPolizaPorTomador(aseguradora, "12345678Z"));
-        System.out.println("Recuperar Polizas por Conductor (DNI 12345678Z): " + UtilidadesAseguradora.recuperarPolizaPorConductor(aseguradora, "12345678Z"));
+        System.out.println("Recuperar Polizas por Tomador: " + UtilidadesAseguradora.recuperarPolizaPorTomador(aseguradora, "12345678Z"));
+        System.out.println("Recuperar Polizas por Conductor: " + UtilidadesAseguradora.recuperarPolizaPorConductor(aseguradora, "87654321Z"));
+
     }
 }

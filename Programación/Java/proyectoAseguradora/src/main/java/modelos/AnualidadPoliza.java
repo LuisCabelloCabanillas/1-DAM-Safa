@@ -39,7 +39,7 @@ public class AnualidadPoliza {
         this.numero = generadorNumeroPoliza();
         this.estadoPoliza = estadoPoliza;
         this.motivoAnulacion = motivoAnulacion;
-        this.cotizacionBase = cotizacionBase;
+        this.cotizacionBase = new Cotizacion(cotizacionBase);
         this.modoPago = modoPago;
         this.esPagoFraccionado = esPagoFraccionado;
         this.tomador = new Personas(cotizacionBase.getTomador());
@@ -52,17 +52,17 @@ public class AnualidadPoliza {
         this.fechaAnulacion = fechaAnulacion;
     }
 
-    public AnualidadPoliza(){
+    public AnualidadPoliza() {
         id = 1;
         numero = "123456";
         estadoPoliza = EstadoPoliza.VIGENTE;
         motivoAnulacion = "No aplica";
-        cotizacionBase = new Cotizacion();
+        cotizacionBase = null;
         modoPago = ModoPago.IBAN;
         esPagoFraccionado = false;
-        tomador = new Personas();
-        conductorPrincipal = new Conductor();
-        conductoresOcasionales = List.of(new Conductor());
+        tomador = null;
+        conductorPrincipal = null;
+        conductoresOcasionales = new ArrayList<>();
         precioModalidad = 100.0;
         precioFinal = 100.0;
         fechaInicioAnualidad = LocalDate.now();
@@ -247,26 +247,5 @@ public class AnualidadPoliza {
     @Override
     public int hashCode() {
         return Objects.hash(id, numero, estadoPoliza, motivoAnulacion, cotizacionBase, modoPago, esPagoFraccionado, tomador, conductorPrincipal, conductoresOcasionales, precioModalidad, precioFinal, fechaInicioAnualidad, fechaFinAnualidad, fechaAnulacion);
-    }
-
-    @Override
-    public String toString() {
-        return "AnualidadPoliza{" +
-                "id=" + id +
-                ", numero='" + numero + '\'' +
-                ", estadoPoliza=" + estadoPoliza +
-                ", motivoAnulacion='" + motivoAnulacion + '\'' +
-                ", cotizacionBase=" + cotizacionBase +
-                ", modoPago=" + modoPago +
-                ", esPagoFraccionado=" + esPagoFraccionado +
-                ", tomador=" + tomador +
-                ", conductorPrincipal=" + conductorPrincipal +
-                ", conductoresOcasionales=" + conductoresOcasionales +
-                ", precioModalidad=" + precioModalidad +
-                ", precioFinal=" + precioFinal +
-                ", fechaInicioAnualidad=" + fechaInicioAnualidad +
-                ", fechaFinAnualidad=" + fechaFinAnualidad +
-                ", fechaAnulacion=" + fechaAnulacion +
-                '}';
     }
 }

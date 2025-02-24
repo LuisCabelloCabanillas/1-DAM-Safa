@@ -55,16 +55,16 @@ public class Personas {
 
     public Personas() {
         idPersona = 1;
-        nombre= "luis";
-        apellido1= "Cabello";
-        apellido2= "Cabanillas";
-        nif= "47563665X";
+        nombre= null;
+        apellido1= null;
+        apellido2= null;
+        nif= null;
         fechaNacimiento= LocalDate.now();
         direccion= null;
         sexo= Sexo.MASCULINO;
-        paisOrigen= "Cabello";
-        email= "Cabello@gmail.com";
-        telefono= "123456";
+        paisOrigen= null;
+        email= null;
+        telefono= null;
         edad= 0;
     }
 

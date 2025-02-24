@@ -71,14 +71,19 @@ order by 1;
 
 /*Calcula la suma de la cantidad total de todos los productos que aparecen en cada uno de los
 pedidos.*/
-select p.codigo_pedidos, count(p.producto)
-from detalle_pedido p
-group by p.codigo_pedido;
+select codigo_pedido, sum(cantidad)
+from detalle_pedido 
+group by codigo_pedido;
 
 /*Clientes cuyo límite de crédito sea mayor que los pagos que haya realizado, junto con el límite
 de crédito disponible.*/
-select cliente.nombre_cliente, cliente.limite_credito||' €'"Limite de credito"
+select cliente.nombre_cliente, cliente.limite_credito||' €'"Limite de credito",sum(total)||' €'"Cantidad pagada",limite_credito-sum(total)||' €' "Crédito disponible"
 from cliente natural join pago 
 group by cliente.nombre_cliente,cliente.limite_credito
-having
-;
+having (sum(total))<limite_credito
+order by 1;
+
+SELECT em.nombre, e.nombre "Nombre Jefe"
+from empleado e join empleado em on e.codigo_jefe=em.codigo_empleado
+order by 1;
+

@@ -233,6 +233,27 @@ public class AnualidadPoliza {
     }
 
     @Override
+    public String toString() {
+        return "AnualidadPoliza{" +
+                "id=" + id +
+                ", numero='" + numero + '\'' +
+                ", estadoPoliza=" + estadoPoliza +
+                ", motivoAnulacion='" + motivoAnulacion + '\'' +
+                ", cotizacionBase=" + cotizacionBase +
+                ", modoPago=" + modoPago +
+                ", esPagoFraccionado=" + esPagoFraccionado +
+                ", tomador=" + tomador +
+                ", conductorPrincipal=" + conductorPrincipal +
+                ", conductoresOcasionales=" + conductoresOcasionales +
+                ", precioModalidad=" + precioModalidad +
+                ", precioFinal=" + precioFinal +
+                ", fechaInicioAnualidad=" + fechaInicioAnualidad +
+                ", fechaFinAnualidad=" + fechaFinAnualidad +
+                ", fechaAnulacion=" + fechaAnulacion +
+                '}';
+    }
+
+    @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         AnualidadPoliza that = (AnualidadPoliza) o;

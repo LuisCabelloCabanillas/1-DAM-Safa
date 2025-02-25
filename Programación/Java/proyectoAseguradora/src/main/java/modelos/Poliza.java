@@ -213,7 +213,6 @@ public class Poliza {
         return "Poliza{" +
                 "id=" + id +
                 ", numero='" + numero + '\n' +
-                ", anualidades=" + anualidades +'\n' +
                 ", estadoPoliza=" + estadoPoliza +'\n' +
                 ", motivoAnulacion='" + motivoAnulacion + '\n' +
                 ", ultimaCotizacionBase=" + ultimaCotizacionBase +'\n' +

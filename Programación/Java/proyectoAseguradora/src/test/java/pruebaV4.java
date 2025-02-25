@@ -12,12 +12,33 @@ public class pruebaV4 {
         Direccion direccion = new Direccion(1, "Fresa", 1, "Particola", "41230", "Castilblanco", "Sevilla", Direccion.TipoVia.calle);
         Personas tomador = new Personas(1, "Juan", "Pérez", "Gómez", "12345678Z", LocalDate.of(2007, 5, 15), direccion, Personas.Sexo.MASCULINO, "España", "assdas@gmail.com", "698538847", 18);
         Conductor conductor = new Conductor(1, "Juan", "Pérez", "Gómez", "12345678Z", LocalDate.of(2007, 5, 15), direccion, Personas.Sexo.MASCULINO, "España", "assdas@gmail.com", "698538847", 18, LocalDate.of(2007, 5, 15), 8, 1);
-        AnualidadPoliza anualidad1 = new AnualidadPoliza(1, AnualidadPoliza.EstadoPoliza.VIGENTE, "No aplica", new Cotizacion(), AnualidadPoliza.ModoPago.IBAN, true, 100.0, 110.0, LocalDate.now(), LocalDate.now().plusYears(1), null);
+        Vehiculo vehiculo = new Vehiculo(1,"Toyota", "Corolla", "1234ABC", LocalDate.of(2018, 1, 1), "Rojo", tomador, 2018);
+
+        Cotizacion cotizado = new Cotizacion();
+        cotizado.setId(1);
+        cotizado.setCodigo(1);
+        cotizado.setFechaCotizacion(LocalDate.now());
+        cotizado.setFechaInicio(LocalDate.now());
+        cotizado.setVehiculo(new Vehiculo(vehiculo));
+        cotizado.setTomador(tomador);
+        cotizado.setConductorPrincipal(conductor);
+        cotizado.setConductoresOcasionales(List.of(conductor));
+        cotizado.setTieneAparcamientoPrivado(true);
+        cotizado.setNumSini5(1);
+        cotizado.setPrecioTERC(1.0);
+        cotizado.setPrecioTAMP(1.0);
+        cotizado.setPrecioTRIE(1.0);
+        cotizado.setModalidadElegida(Cotizacion.Modalidad.TERC);
+
+        AnualidadPoliza anualidad1 = new AnualidadPoliza(1, AnualidadPoliza.EstadoPoliza.VIGENTE, "No aplica", new Cotizacion(), AnualidadPoliza.ModoPago.IBAN, false, 100.0, 100.0, LocalDate.now(), LocalDate.now().plusYears(1), null);
         anualidad1.setTomador(tomador);
         anualidad1.setConductorPrincipal(conductor);
-        Poliza poliza1 = new Poliza(1, List.of(anualidad1), AnualidadPoliza.EstadoPoliza.VIGENTE, null, new Cotizacion());
+
+        Poliza poliza1 = new Poliza(1, List.of(anualidad1), AnualidadPoliza.EstadoPoliza.VIGENTE, "No aplica", cotizado);
+
         Aseguradora aseguradora = new Aseguradora(1, "Aseguradora LUS", direccion, "123456789", new ArrayList<>());
         aseguradora.addPoliza(poliza1);
+
         System.out.println("Poliza de la persona contratada: \n" + poliza1);
 
 
@@ -27,8 +48,6 @@ public class pruebaV4 {
         Personas persona = new Personas(1, "Juan", "Pérez", "Gómez", "12345678Z", LocalDate.of(2007, 5, 15), direccion1, Personas.Sexo.MASCULINO, "España", "assdas@gmail.com","698538847",18);
         Personas tomador1 = new Personas(1, "Juan", "Pérez", "Gómez", "12345678Z", LocalDate.of(2007, 5, 15), direccion1, Personas.Sexo.MASCULINO, "España", "assdas@gmail.com","698538847",18);
 
-        Cotizacion cotizado= new Cotizacion();
-        cotizado.setTomador(tomador);
 
         System.out.println();
         UtilidadesMultiplicadores utilidades = new UtilidadesMultiplicadores(SoporteVehiculos.getInstance());

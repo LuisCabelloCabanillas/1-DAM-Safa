@@ -1,4 +1,8 @@
+import com.aseguradora.utils.SoporteVehiculos;
+import com.aseguradora.utils.Tarifa;
 import modelos.*;
+import utilidades.UtilidadesMultiplicadores;
+
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
@@ -53,7 +57,7 @@ public class PruebaContratación {
             String primerConductor = scanner.nextLine().trim().toLowerCase();
             Conductor conductorPrincipal;
             if (primerConductor.equals("si")) {
-                conductorPrincipal = new Conductor(LocalDate.of(2007, 5, 15), 8, 2);
+                conductorPrincipal = new Conductor(1, tomNombre, tomApellido1, tomApellido2, tomNIF, tomFechaNacimiento, direccion, tomSexo, tomPais, tomEmail, tomTelefono, tomEdad, LocalDate.now(), 8, 1);
             } else {
                 System.out.println("Detalles primer conductor:");
                 System.out.print("Nombre: ");
@@ -101,7 +105,7 @@ public class PruebaContratación {
                 int puntosCarnet = Integer.parseInt(scanner.nextLine());
                 System.out.print("Años Asegurados: ");
                 int anyoAsegurados = Integer.parseInt(scanner.nextLine());
-                conductorPrincipal = new Conductor(LocalDate.of(2007, 5, 15), 8, 2);
+                conductorPrincipal = new Conductor(1, conNombre, conApellido1, conApellido2, conNIF, conFechaNacimiento, conDireccion, conSexo, conPais, conEmail, conTelefono, conEdad, fechaCarnet, puntosCarnet, anyoAsegurados);
             }
 
             List<Conductor> conductoresOcasionales = new ArrayList<>();
@@ -155,7 +159,7 @@ public class PruebaContratación {
                 System.out.print("Años Asegurados: ");
                 int exiAnios = Integer.parseInt(scanner.nextLine());
 
-                Conductor conAdicional = new Conductor(LocalDate.of(2007, 5, 15), 8, 2);
+                Conductor conAdicional = new Conductor(1, exiNombre, exiApellido1, exiApellido2, exiNIF, exiFechaNacimineto, exiDireccion, exiSexo, exiPais, exiEmail, exiTelefono, exiEdad, exiFechaCarnet, exiPuntos, exiAnios);
                 conductoresOcasionales.add(conAdicional);
             }
 
@@ -171,7 +175,10 @@ public class PruebaContratación {
             LocalDate fechaMatriculacion = LocalDate.parse(scanner.nextLine());
             System.out.print("Color: ");
             String color = scanner.nextLine();
-            Vehiculo vehiculo = new Vehiculo(1,"Ford", "Focus", "1234ABC", LocalDate.of(2015, 3, 10), "Rojo", tomador, 2000);
+            System.out.println("Siniestros en los últimos años: ");
+            int numSiniestros = Integer.parseInt(scanner.nextLine());
+            Vehiculo vehiculo = new Vehiculo(1,marca, modelo, matricula, fechaMatriculacion, color, tomador,fechaMatriculacion.getYear());
+
 
             Cotizacion cotizacion = new Cotizacion(1, 1, LocalDate.now(), LocalDate.now(), vehiculo, tomador, conductorPrincipal, conductoresOcasionales, true, 1, 1.0, 1.0, 1.0, Cotizacion.Modalidad.TERC);
 
@@ -182,8 +189,32 @@ public class PruebaContratación {
             Poliza poliza = new Poliza(1, List.of(anualidadPoliza), AnualidadPoliza.EstadoPoliza.VIGENTE, "No aplica", cotizacion);
 
             System.out.println("Poliza creada: " + poliza);
+            try {
+                UtilidadesMultiplicadores utilidades = new UtilidadesMultiplicadores(SoporteVehiculos.getInstance());
+                Tarifa tarifa = utilidades.calcularTarifaExtendida(marca, modelo, LocalDate.now().getYear(), codigoPostal, false, false, true, numSiniestros);
+                System.out.println("Tarifa calculada:");
+                System.out.println("Precio TERC: " + tarifa.getPrecioTERC());
+                System.out.println("Precio TAMP: " + tarifa.getPrecioTAMP());
+                System.out.println("Precio TRIE: " + tarifa.getPrecioTRIE());
+                System.out.println(tarifa);
+                System.out.print("¿Desea aceptar el seguro? (si/no): ");
+                String aceptarSeguro = scanner.nextLine().trim().toLowerCase();
+                if (aceptarSeguro.equals("si")) {
+                    System.out.print("Elija método de pago (IBAN/TARJETA): ");
+                    AnualidadPoliza.ModoPago modoPago = AnualidadPoliza.ModoPago.valueOf(scanner.nextLine().toUpperCase());
+                    System.out.println("Seguro aceptado. Detalles de la póliza:");
+                    System.out.println(poliza);
+                } else {
+                    System.out.println("Seguro rechazado.");
+                }
+            } catch (IllegalArgumentException e) {
+                System.err.println("Error al calcular la tarifa: " + e.getMessage());
+            }
+
+
         } catch (Exception e) {
             System.out.println("Error: " + e.getMessage());
         }
     }
 }
+

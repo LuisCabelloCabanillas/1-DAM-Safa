@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:complexType>
+        <xs:sequence name="pokedex">
+            <xs:complexType>
+                <xs:sequence>
+                    <xs:element name="pokemon">
+                        <xs:sequence>
+                            <xs:element name="evoluciones">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="evolución">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="order" type="xs:integer"></xs:element>
+                                                    <xs:element name="num_pokedex" type="xs:integer"></xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="datos_generales">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="altura" type="xs:double"></xs:element>
+                                        <xs:element name="peso" type="xs:integer"></xs:element>
+                                        <xs:element name="sexo">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:enumeration value="M"></xs:enumeration>
+                                                    <xs:enumeration value="F"></xs:enumeration>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="categoria" type="xs:string"></xs:element>
+                                        <xs:element name="habilidad" type="xs:string"></xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="tipología">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="tipos">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="tipo">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="descripción" type="xs:string"></xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="debilidades">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="debilidad">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="tipo" type="xs:string"></xs:element>
+                                                                <xs:element name="efectividad" type="xs:string"></xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="stats_base">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="hp" type="xs:integer"></xs:element>
+                                        <xs:element name="at" type="xs:integer"></xs:element>
+                                        <xs:element name="def" type="xs:integer"></xs:element>
+                                        <xs:element name="spat" type="xs:integer"></xs:element>
+                                        <xs:element name="spde" type="xs:integer"></xs:element>
+                                        <xs:element name="vel" type="xs:integer"></xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:element>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

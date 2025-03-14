@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--Llamada de xlst
+<?xml-stylesheet href="nombre.xslt" type="text/xsl">-->
 <!DOCTYPE biblioteca [
     <!ELEMENT biblioteca(libro+)>
     <!ELEMENT libro1 (titulo,autor,fechaPublicacion)>

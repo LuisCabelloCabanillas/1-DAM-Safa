@@ -4,7 +4,7 @@
 <pokedex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="pokédex.xsd">
 
-    <pokemon nombre="Bulbasur" num_pokedex="1">
+    <pokemon nombre="Bulbasaur" num_pokedex="1" url_imagen=".../foto/bulbasaur.png">
 
         <evoluciones>
             <evolución>

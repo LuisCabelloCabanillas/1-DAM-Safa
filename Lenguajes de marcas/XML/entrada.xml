@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="entrada.xslt"?>
+<entrada>
+    <evento>FSO- GIRA FENIX</evento>
+    <codigo>12114TG4314HJ13413</codigo>
+    <imagen>https://raw.githubusercontent.com/gist/assets/fenix-concert.jpg</imagen>
+    <detalles>
+        <fecha>25/03/2022</fecha>
+        <lugar>Palacio de Congresos</lugar>
+        <ciudad>Sevilla</ciudad>
+        <precio>60,00 €</precio>
+    </detalles>
+</entrada>

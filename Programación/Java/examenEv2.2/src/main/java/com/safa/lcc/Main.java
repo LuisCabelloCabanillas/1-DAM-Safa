@@ -1,30 +1,55 @@
 package com.safa.lcc;
 
-public class Main {
-}
+import com.joey.utils.NombreRazaPerro;
+import com.joey.utils.Opcion;
+import com.joey.utils.SoporteJoey;
 
-/*Validaciones con expresiones lambda
-import java.util.regex.Pattern;
+import java.util.*;
 import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
-public class RegexEjemplo {
-    public static boolean comienzaConHola(String texto) {
-        String regex = "^hola\\b.*"; // La frase debe comenzar con "hola"
-        Pattern pattern = Pattern.compile(regex, Pattern.CASE_INSENSITIVE); // Ignora mayúsculas y minúsculas
-        Matcher matcher = pattern.matcher(texto);
-        return matcher.matches();
+public class Main {
+    public static void main(String[] args){
+
     }
 
-    public static void main(String[] args) {
-        String texto1 = "hola, ¿cómo estás?"; // Debe ser válido
-        String texto2 = "Hola mundo!"; // Debe ser válido (mayúscula inicial)
-        String texto3 = "Dije hola en la conversación."; // No válido, "hola" no está al inicio
-        String texto4 = "holanda es un país"; // No válido, empieza con "holanda", no "hola"
+    /*Ejercicio 1*/
 
-        System.out.println(comienzaConHola(texto1)); // true
-        System.out.println(comienzaConHola(texto2)); // true
-        System.out.println(comienzaConHola(texto3)); // false
-        System.out.println(comienzaConHola(texto4)); // false
+    public static void muestraOpcionesOrdenadas(){
+        SoporteJoey ayuda = SoporteJoey.getInstance();
+        List<Opcion> opciones= ayuda.getOpciones();
+
+        opciones.stream().filter(n -> n.getPrecio() <200 && n.getDistancia()<50).sorted(Comparator.comparing(Opcion::getPuntuacion).reversed().thenComparing(Opcion::getPrecio)).forEach(n ->System.out.println(">> Puntuación: " + n.getPuntuacion() +"\n" + n));
     }
+
+    /*Ejercicio 2*/
+
+    /*
+    public static Map<Integer,List<String>> creaMapaOpciones(){
+        SoporteJoey ayuda = SoporteJoey.getInstance();
+        List<Opcion> opciones= ayuda.getOpciones();
+
+        return opciones.stream().collect(Collectors.groupingBy(String::getPuntuacion));
+    }
+    */
+
+    /*Ejercicio 3*/
+
+    public static boolean esDocumentoValido(String nombreDocumento){
+        String expresion = "(Ley|Decreto|Reglamento|Orden) ([1-9]\\d{0,4})/(19[7-9]\\d|20\\d{2})( de .+)?$";
+        Pattern patron = Pattern.compile(expresion);
+        Matcher matcher = patron.matcher(nombreDocumento);
+        return  matcher.matches();
+
+    }
+
+    /*Ejercicio 4*/
+    List<PerroDeJose> perrosDeJose = Arrays.asList(
+            new PerroDeJose("Cala",SoporteJoey.getInstance().getRazaPerroByName(NombreRazaPerro.MASTIN),null),
+            new PerroDeJose("Chuli",SoporteJoey.getInstance().getRazaPerroByName(NombreRazaPerro.BEAGLE),null),
+            new PerroDeJose("Lila",SoporteJoey.getInstance().getRazaPerroByName(NombreRazaPerro.YORKSHIRE_TERRIER),null)
+    );
+
 }
-*/

@@ -1,86 +1,180 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-    <xsl:output method="html" indent="yes"/>
-    
-    <xsl:template match="/pokedex">
+    <xsl:template match="/">
         <html>
             <head>
-                <title>Pokédex</title>
                 <style>
-                    body { font-family: Arial, sans-serif; text-align: center; background-color: #f8f8f8; }
-                    .container { width: 60%; margin: auto; border: 2px solid black; padding: 20px; border-radius: 20px; background: white; }
-                    .header { background-color: red; color: white; padding: 15px; font-size: 24px; font-weight: bold; border-radius: 10px; }
-                    .pokemon { border: 1px solid gray; margin: 10px; padding: 10px; }
-                    .section { margin-top: 10px; padding: 10px; border-radius: 10px; }
-                    .datos { background-color: #ADD8E6; padding: 15px; font-weight: bold; }
-                    .stats { background-color: #D3D3D3; padding: 15px; display: table-column; }
-                    .debilidades { background-color: #FF9999; padding: 15px; }
-                    .fortalezas { background-color: #99CCFF; padding: 15px; }
-                    .evoluciones { background-color: #CCCCFF; padding: 15px; }
-                    .stats-table { margin: auto; width: 60%; border-collapse: collapse; display: table-column; }
-                    .stats-table th, .stats-table td { border: 1px solid black; padding: 10px; }
-                    .pokemon-image { width: 150px; height: auto; display: block; margin: 10px auto; border: 2px solid black; border-radius: 10px; }
+                    .contenedor {
+                        border: 1px solid black;
+                        padding: 10px;
+                        width: 600px;
+                        margin: 20px auto;
+                        font-family: Arial, sans-serif;
+                    }
+                    .header {
+                        background-color: #FF6B6B;
+                        color: white;
+                        text-align: center;
+                        padding: 5px;
+                        margin-bottom: 10px;
+                    }
+                    .grid {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr;
+                        gap: 10px;
+                    }
+                    .caja {
+                        border: 2px solid #ccc;
+                        margin-bottom: 10px;
+                    }
+                    .titulo-caja {
+                        background-color: #4A90E2;
+                        color: white;
+                        text-align: center;
+                        padding: 5px;
+                    }
+                    .contenido-caja {
+                        padding: 10px;
+                    }
+                    .pokemon-info {
+                        display: flex;
+                        gap: 5px;
+                        margin-bottom: 10px;
+                    }
+                    .pokemon-imagen {
+                        border: 2px solid #ccc;
+                        padding: 10px;
+                    }
+                    table {
+                        width: 100%;
+                    }
+                    td {
+                        padding: 2px 0;
+                    }
+                    .texto-der {
+                        text-align: right;
+                    }
+                    .numero-evoluciones {
+                        font-size: 24px;
+                        font-weight: bold;
+                        text-align: center;
+                    }
                 </style>
             </head>
             <body>
-                <div class="header">Pokédex</div>
-                <xsl:apply-templates select="pokemon"/>
+                <div class="contenedor">
+                    <div class="header">
+                        <h2>Pokedex</h2>
+                    </div>
+                    <div class="grid">
+                        <div>
+                            <div class="pokemon-info">
+                                <span><xsl:value-of select="pokedex/pokemon/@num_pokedex"/></span>
+                                <span><xsl:value-of select="pokedex/pokemon/@nombre"/></span>
+                            </div>
+                            <div class="pokemon-imagen">
+                                <img src="{pokedex/pokemon/@url_imagen}" alt="{pokedex/pokemon/@nombre}" width="100%"/>
+                            </div>
+                            <div class="caja">
+                                <div class="titulo-caja">Debilidades</div>
+                                <div class="contenido-caja">
+                                    <table>
+                                        <xsl:for-each select="pokedex/pokemon/tipología/debilidades/debilidad">
+                                            <tr>
+                                                <td><xsl:value-of select="tipo"/></td>
+                                                <td class="texto-der"><xsl:value-of select="efectividad"/></td>
+                                            </tr>
+                                        </xsl:for-each>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="caja">
+                                <div class="titulo-caja">Datos generales</div>
+                                <div class="contenido-caja">
+                                    <table>
+                                        <tr>
+                                            <td>Altura:</td>
+                                            <td><xsl:value-of select="pokedex/pokemon/datos_generales/altura"/> m</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Peso:</td>
+                                            <td><xsl:value-of select="pokedex/pokemon/datos_generales/peso"/> Kg</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sexo:</td>
+                                            <td><xsl:value-of select="pokedex/pokemon/datos_generales/sexo"/></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Categoría:</td>
+                                            <td><xsl:value-of select="pokedex/pokemon/datos_generales/categoria"/></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Habilidad:</td>
+                                            <td><xsl:value-of select="pokedex/pokemon/datos_generales/habilidad"/></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="caja">
+                                <div class="titulo-caja">Fortalezas</div>
+                                <div class="contenido-caja">
+                                    <table>
+                                        <xsl:for-each select="pokedex/pokemon/tipología/Fortalezas/fortaleza">
+                                            <tr>
+                                                <td><xsl:value-of select="tipo"/></td>
+                                                <td class="texto-der"><xsl:value-of select="fortalidad"/></td>
+                                            </tr>
+                                        </xsl:for-each>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="caja">
+                                <div class="titulo-caja">Stats Base</div>
+                                <div class="contenido-caja">
+                                    <table>
+                                        <tr>
+                                            <td>PS</td>
+                                            <td class="texto-der"><xsl:value-of select="pokedex/pokemon/stats_base/hp"/></td>
+                                        </tr>
+                                        <tr>
+                                            <td>AT</td>
+                                            <td class="texto-der"><xsl:value-of select="pokedex/pokemon/stats_base/at"/></td>
+                                        </tr>
+                                        <tr>
+                                            <td>DEF</td>
+                                            <td class="texto-der"><xsl:value-of select="pokedex/pokemon/stats_base/def"/></td>
+                                        </tr>
+                                        <tr>
+                                            <td>S.AT</td>
+                                            <td class="texto-der"><xsl:value-of select="pokedex/pokemon/stats_base/spat"/></td>
+                                        </tr>
+                                        <tr>
+                                            <td>S.DEF</td>
+                                            <td class="texto-der"><xsl:value-of select="pokedex/pokemon/stats_base/spde"/></td>
+                                        </tr>
+                                        <tr>
+                                            <td>SPD</td>
+                                            <td class="texto-der"><xsl:value-of select="pokedex/pokemon/stats_base/vel"/></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="caja">
+                                <div class="titulo-caja">N. Evoluciones</div>
+                                <div class="contenido-caja">
+                                    <div class="numero-evoluciones">2</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </body>
         </html>
     </xsl:template>
-    
-    <xsl:template match="pokemon">
-        <div class="container">
-            <h2><xsl:value-of select="@num_pokedex"/> - <xsl:value-of select="@nombre"/></h2>
-            <img class="pokemon-image">
-                <xsl:attribute name="src"><xsl:value-of select="@url_imagen"/></xsl:attribute>
-                <xsl:attribute name="alt"><xsl:value-of select="@nombre"/></xsl:attribute>
-            </img>
-            
-            <div class="section datos">
-                <h3>Datos generales</h3>
-                <p>Altura: <xsl:value-of select="datos_generales/altura"/> m</p>
-                <p>Peso: <xsl:value-of select="datos_generales/peso"/> kg</p>
-                <p>Sexo: <xsl:value-of select="datos_generales/sexo"/></p>
-                <p>Categoría: <xsl:value-of select="datos_generales/categoria"/></p>
-                <p>Habilidad: <xsl:value-of select="datos_generales/habilidad"/></p>
-            </div>
-            
-            <div class="section stats">
-                <h3>Stats Base</h3>
-                <table class="stats-table">
-                    <tr><th>PS</th><th>AT</th><th>DEF</th><th>SP. AT</th><th>SP. DEF</th><th>VEL</th></tr>
-                    <tr>
-                        <td><xsl:value-of select="stats_base/hp"/></td>
-                        <td><xsl:value-of select="stats_base/at"/></td>
-                        <td><xsl:value-of select="stats_base/def"/></td>
-                        <td><xsl:value-of select="stats_base/spat"/></td>
-                        <td><xsl:value-of select="stats_base/spde"/></td>
-                        <td><xsl:value-of select="stats_base/vel"/></td>
-                    </tr>
-                </table>
-            </div>
-            
-            <div class="section debilidades">
-                <h3>Debilidades</h3>
-                <xsl:apply-templates select="tipología/debilidades/debilidad"/>
-            </div>
-            
-            <div class="section fortalezas">
-                <h3>Fortalezas</h3>
-                <!-- Añadir fortalezas si existen en el XML -->
-            </div>
-            
-            <div class="section evoluciones">
-                <h3>N. Evoluciones</h3>
-                <p><xsl:value-of select="count(evoluciones/evolución)"/></p>
-            </div>
-        </div>
-    </xsl:template>
-    
-    <xsl:template match="debilidad">
-        <p><xsl:value-of select="tipo"/> x<xsl:value-of select="efectividad"/></p>
-    </xsl:template>
 </xsl:stylesheet>
-
-

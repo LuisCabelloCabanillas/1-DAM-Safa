@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <!DOCTYPE pokedex SYSTEM "pokédex.dtd">
 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE pokedex SYSTEM "pokédex.dtd">
+
 <pokedex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="pokédex.xsd">
-
-    <pokemon nombre="Bulbasaur" num_pokedex="1" url_imagen=".../foto/bulbasaur.png">
-
+    <pokemon nombre="Bulbasaur" num_pokedex="1" url_imagen="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png">
         <evoluciones>
             <evolución>
                 <order>-1</order>
@@ -16,8 +17,8 @@
         <datos_generales>
             <altura>0.45</altura>
             <peso>20</peso>
-            <sexo>M/F</sexo>
-            <categoria>semilla</categoria>
+            <sexo>M</sexo>
+            <categoria>Semilla</categoria>
             <habilidad>Espesura</habilidad>
         </datos_generales>
 
@@ -29,20 +30,33 @@
             </tipos>
             <debilidades>
                 <debilidad>
-                    <tipo>fuego</tipo>
+                    <tipo>FUEGO</tipo>
+                    <efectividad>x2</efectividad>
+                </debilidad>
+                <debilidad>
+                    <tipo>VOLADOR</tipo>
                     <efectividad>x2</efectividad>
                 </debilidad>
             </debilidades>
+            <Fortalezas>
+                <fortaleza>
+                    <tipo>Agua</tipo>
+                    <fortalidad>x2</fortalidad>
+                </fortaleza>
+                <fortaleza>
+                    <tipo>Tierro</tipo>
+                    <fortalidad>x2</fortalidad>
+                </fortaleza>
+            </Fortalezas>
         </tipología>
 
         <stats_base>
-            <hp>30</hp>
-            <at>10</at>
-            <def>12</def>
-            <spat>15</spat>
-            <spde>13</spde>
-            <vel>5</vel>
+            <hp>15</hp>
+            <at>20</at>
+            <def>30</def>
+            <spat>12</spat>
+            <spde>12</spde>
+            <vel>7</vel>
         </stats_base>
-
     </pokemon>
 </pokedex>

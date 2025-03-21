@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+    <xsl:template match="/">
+        <html>
+            <head>
+                <title>Piratas</title>
+                <style>
+                    .container {
+                        border: 1px solid #ccc;
+                        padding: 20px;
+                        margin: 10px;
+                        border-radius: 10px;
+                    }
+                    .section {
+                        margin: 10px 0;
+                        padding: 10px;
+                        background-color: #f0f0f0;
+                    }
+                    table {
+                        width: 100%;
+                        border-collapse: collapse;
+                    }
+                    th, td {
+                        border: 1px solid #ddd;
+                        padding: 8px;
+                        text-align: left;
+                    }
+                    th {
+                        background-color: #f5f5f5;
+                    }
+                </style>
+            </head>
+            <body>
+                <div style="background-color: #f8f9fa; padding: 20px;">
+                    <h1 style="color: #dc3545; text-align: center;">Piratas</h1>
+                    <xsl:for-each select="piratas/pirata">
+                        <div class="container">
+                            <div style="display: flex; justify-content: space-between;">
+                                <div>
+                                    <h2 style="color: #007bff;"><xsl:value-of select="nombre"/></h2>
+                                    <div class="section">
+                                        <h3>Actor</h3>
+                                        <p>Nombre completo: <xsl:value-of select="datos_actor/nombre"/><xsl:text> </xsl:text><xsl:value-of select="datos_actor/apellidos"/></p>
+                                        <p>Sexo: <xsl:value-of select="datos_actor/sexo"/></p>
+                                        <p>Fecha nacimiento: <xsl:value-of select="datos_actor/nacimiento"/></p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img>
+                                        <xsl:attribute name="src">
+                                            <xsl:value-of select="imagen"/>
+                                        </xsl:attribute>
+                                        <xsl:attribute name="style">
+                                            width: 150px; height: 150px; object-fit: cover;
+                                        </xsl:attribute>
+                                    </img>
+                                </div>
+                            </div>
+                            
+                            <div class="section">
+                                <h3>Películas</h3>
+                                <table>
+                                    <tr>
+                                        <th>Título</th>
+                                        <th>Saga</th>
+                                    </tr>
+                                    <xsl:for-each select="peliculas/pelicula">
+                                        <tr>
+                                            <td><xsl:value-of select="datos/titulo"/></td>
+                                            <td><xsl:value-of select="datos/saga"/></td>
+                                        </tr>
+                                    </xsl:for-each>
+                                </table>
+                            </div>
+                            
+                            <div class="section">
+                                <h3>Roles</h3>
+                                <table>
+                                    <tr>
+                                        <th>Tipo</th>
+                                        <th>Barco</th>
+                                    </tr>
+                                    <xsl:for-each select="roles/rol">
+                                        <tr>
+                                            <td><xsl:value-of select="tipo_rol"/></td>
+                                            <td><xsl:value-of select="barco"/></td>
+                                        </tr>
+                                    </xsl:for-each>
+                                </table>
+                            </div>
+                        </div>
+                    </xsl:for-each>
+                </div>
+            </body>
+        </html>
+    </xsl:template>
+</xsl:stylesheet>

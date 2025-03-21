@@ -35,6 +35,7 @@
                     }
                     .contenido-caja {
                         padding: 10px;
+                        border: 1px solid black;
                     }
                     .pokemon-info {
                         display: flex;
@@ -49,7 +50,7 @@
                         width: 100%;
                     }
                     td {
-                        padding: 2px 0;
+                        border: 1px solid black;
                     }
                     .texto-der {
                         text-align: right;

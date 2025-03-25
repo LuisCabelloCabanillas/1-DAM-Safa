@@ -7,21 +7,21 @@ import com.joey.utils.SoporteJoey;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class Main {
     public static void main(String[] args){
-
+        muestraOpcionesOrdenadas();
     }
 
     /*Ejercicio 1*/
 
-    public static void muestraOpcionesOrdenadas(){
+    public static String muestraOpcionesOrdenadas(){
         SoporteJoey ayuda = SoporteJoey.getInstance();
         List<Opcion> opciones= ayuda.getOpciones();
 
-        opciones.stream().filter(n -> n.getPrecio() <200 && n.getDistancia()<50).sorted(Comparator.comparing(Opcion::getPuntuacion).reversed().thenComparing(Opcion::getPrecio)).forEach(n ->System.out.println(">> Puntuación: " + n.getPuntuacion() +"\n" + n));
+        opciones.stream().filter(n -> n.getPrecio() <200 && n.getDistancia()<50).sorted(Comparator.comparing(Opcion::getPuntuacion).reversed().
+                thenComparing(Opcion::getPrecio)).forEach(n ->System.out.println(">> Puntuación: " + n.getPuntuacion() +"\n" + n));
+        return null;
     }
 
     /*Ejercicio 2*/

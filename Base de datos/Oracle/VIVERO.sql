@@ -8,23 +8,20 @@ create or replace procedure productosGamas(tipo producto.gama%type) as
 
         conteo number;
     BEGIN
+        select count(gama) into conteo
+        from producto
+        where gama = tipo;
+        
         DBMS_OUTPUT.PUT_LINE('Los productos de la gama ' || tipo || ' son:');
         DBMS_OUTPUT.PUT_LINE('------------------------------------');
         for datos in datosproduc LOOP
         DBMS_OUTPUT.PUT_LINE ('Nombre:   '||datos.nombre|| ' PVP: ' ||datos.precio_venta);
         DBMS_OUTPUT.PUT_LINE('------------------------------------');
         END LOOP;
-        
-        
-        select count(gama) into conteo
-        from producto
-        where gama = tipo;
-        
         DBMS_OUTPUT.PUT_LINE('Hay ' || conteo || ' productos de la gama ' || tipo);
     END;
     /
 exec productosGamas('Herramientas');
-
 
 
 
